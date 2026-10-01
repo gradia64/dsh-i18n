@@ -59,10 +59,13 @@ after the connection service is ready.
   0.2.0-rc.2) replaced by `[data-team-panel]` and `[data-team-action]` (from
   `@deepseek-ai/dsh-experimental-client-ui-agent-team@0.2.0-rc.2`).
 
-**Not chosen:** auto-translating new keys via the plugin's own `/api/dsh-i18n.translate`
-endpoint — no API key is available in the current environment. The runtime falls back
-to English (or Simplified-to-Traditional conversion for zh-HK/zh-TW) for untranslated
-keys, preserving full UI functionality.
+**Not chosen:** machine-translating the new keys via the plugin's own
+`/api/dsh-i18n.translate` endpoint as part of this change. Keeping translation
+out of the compatibility work makes the diff reviewable and lets the 12 new
+packages be translated (and checked by native speakers) in a separate step.
+Until then the runtime falls back to English (or Simplified-to-Traditional
+conversion for zh-HK/zh-TW) for untranslated keys, preserving full UI
+functionality.
 
 ## 2026-09-09 — Do not convert streaming conversation text
 
