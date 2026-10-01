@@ -4,20 +4,20 @@
     {
       "ns": "settings.shell",
       "dict": {
-        "title": "Shell",
-        "description": "Limit how long each command may run and how much it may output.",
-        "timeoutMs": "Command timeout (ms)",
-        "timeoutMsHint": "How long one command may run before it is terminated.",
-        "maxOutputBytes": "Output cap per stream (bytes)",
-        "maxOutputBytesHint": "Output beyond this spills to a temporary file rather than being lost.",
-        "overridden": "Overridden",
-        "reset": "Reset to default",
-        "readOnly": "This deployment stores settings read-only.",
-        "unavailable": "This plugin is not loaded, so it cannot be configured right now.",
-        "save": "Save",
-        "saving": "Saving…",
-        "saveFailed": "The deployment did not accept these values; they were left for you to correct.",
-        "invalidNumber": "Enter a number, or leave blank to use the default."
+        "title": "終端",
+        "description": "限制每條命令最多能跑多久、最多輸出多少內容。",
+        "timeoutMs": "命令超時（毫秒）",
+        "timeoutMsHint": "單條命令允許運行多久，超時即終止。",
+        "maxOutputBytes": "單流輸出上限（字節）",
+        "maxOutputBytesHint": "超出部分會轉存到臨時文件，而不是被丟棄。",
+        "overridden": "已覆蓋",
+        "reset": "恢復默認",
+        "readOnly": "本部署的設置為只讀。",
+        "unavailable": "該插件當前未加載，暫時無法配置。",
+        "save": "保存",
+        "saving": "保存中…",
+        "saveFailed": "本部署沒有接受這些值，已保留供你修改。",
+        "invalidNumber": "請填數字；留空表示使用默認值。"
       }
     }
   ]

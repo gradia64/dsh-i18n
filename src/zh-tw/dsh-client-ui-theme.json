@@ -8,11 +8,11 @@
         "appearance.light": "淺色",
         "appearance.dark": "深色",
         "appearance.system": "跟隨系統",
-        "fontSize.title": "Font size",
-        "fontSize.description": "Only affects conversation content",
+        "fontSize.title": "字號大小",
+        "fontSize.description": "僅影響會話內容的字號",
         "fontSize.unit": "px",
-        "fontSize.increase": "Increase font size",
-        "fontSize.decrease": "Decrease font size"
+        "fontSize.increase": "增大字號",
+        "fontSize.decrease": "減小字號"
       }
     }
   ]

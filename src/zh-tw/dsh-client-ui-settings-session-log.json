@@ -4,10 +4,10 @@
     {
       "ns": "settings.sessionLog",
       "dict": {
-        "title": "Upload Session Log when using the official model API",
-        "description": "Help improve DeepSeek models and products.",
-        "saved": "Preference saved",
-        "failed": "Could not save preference"
+        "title": "在使用官方模型 API 時上傳 Session Log",
+        "description": "幫助改進 DeepSeek 模型與產品",
+        "saved": "設置已保存",
+        "failed": "無法保存設置"
       }
     }
   ]
