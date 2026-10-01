@@ -65,9 +65,11 @@ npm test               # check + build + converter verification + runtime harnes
 
 node scripts/extract.mjs <installed-dsh-path>   # re-extract upstream dictionaries
 node scripts/migrate-locales.mjs                # merge new keys into locale dirs (English placeholders)
+node scripts/fill-traditional.mjs               # zh-HK/zh-TW: fill new keys from zh-src via the converter
+node scripts/check.mjs --record-pending         # record remaining English placeholders as pending
 ```
 
-Extraction accepts an installed DSH root, its `@deepseek-ai` package directory, or the unpacked desktop application path. After extracting new upstream dictionaries, run `migrate-locales.mjs` to merge new keys and create new package files for all 20 locales. New keys start as English placeholders and should be translated; until then the English-residue gate reports them as warnings rather than failures.
+Extraction accepts an installed DSH root, its `@deepseek-ai` package directory, or the unpacked desktop application path. After extracting new upstream dictionaries, run `migrate-locales.mjs` to merge new keys and create new package files for all 20 locales. New keys start as English placeholders (zh-HK/zh-TW are then filled from zh-src by `fill-traditional.mjs`). `check.mjs` still fails on English residue, except for keys listed in `scripts/pending-translation.json`, which are reported as warnings; remove a key from that list once it is translated.
 
 ## Publishing
 

@@ -50,9 +50,18 @@ after the connection service is ready.
 - `scripts/migrate-locales.mjs` added to merge new keys into existing locale files
   (English placeholders for untranslated keys) and create new package files for all
   20 locales.
-- `scripts/check.mjs` English-residue gate relaxed during transition: new packages
-  (`PENDING_PACKAGES`) are warnings, not failures. Once all 12 packages are translated,
-  remove `PENDING_PACKAGES` and restore the hard-failure path.
+- `scripts/check.mjs` keeps English residue and simplified residue as hard failures.
+  The only exception is an explicit list, `scripts/pending-translation.json`
+  (`<locale>/<file>/<ns>.<key>`), generated with `--record-pending`: listed keys are
+  warnings, and a listed key that is no longer untranslated fails, so the list can only
+  shrink. The script sets `process.exitCode` instead of calling `process.exit()`, which
+  could truncate piped output and hide the failure messages behind thousands of warnings.
+- `scripts/fill-traditional.mjs` fills zh-HK/zh-TW keys that `migrate-locales.mjs` left
+  as English with the zh-src value converted through `src/zh-tw-parts/chars.json`, the
+  same result the runtime Simplified→Traditional fallback produces. Without it the
+  English placeholder would bypass that fallback (1092 keys per locale). Character-level
+  conversion keeps mainland vocabulary (e.g. 設置 rather than 設定); proper zh-HK/zh-TW
+  wording is left for a follow-up.
 
 **DOM skip selector update:**
 - `[data-agent-teams-panel-open]` and `[data-agent-teams-collapsed]` (removed in
