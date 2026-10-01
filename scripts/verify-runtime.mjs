@@ -45,7 +45,7 @@ if (!spec || spec.id !== pkg.name || typeof spec.factory !== "function") {
 const mod = spec.factory(() => { throw new Error("require not used"); });
 if (!mod || typeof mod.apply !== "function") { console.error("FAIL: no apply"); process.exit(1); }
 
-// ---- faithful locale-service mock (mirrors dsh-client-locale 0.1.5-rc.2) ----
+// ---- faithful locale-service mock (mirrors dsh-client-locale 0.2.0-rc.2) ----
 const localeKey = (v) => String(v).toLowerCase();
 const dicts = new Map(); // ns -> Map(langKey -> dict)
 const catalog = new Map([
@@ -131,14 +131,15 @@ for (const L of locales) {
   ok(catalog.has(localeKey(L.id)), "catalog has " + L.id);
   let keys = 0;
   for (const nsMap of dicts.values()) keys += Object.keys(nsMap.get(localeKey(L.id)) ?? {}).length;
-  if (keys !== 715) ok(false, "locale " + L.id + " keys=" + keys, "expected 715");
+  if (keys !== 1665) ok(false, "locale " + L.id + " keys=" + keys, "expected 1665");
   else totalReg++;
 }
-ok(totalReg === 20, "all 20 locales registered with 715 keys", totalReg + "/20");
+ok(totalReg === 20, "all 20 locales registered with 1665 keys", totalReg + "/20");
 ok(clientSrc.includes("characterData: false"), "observers omit characterData");
 ok(!clientSrc.includes("characterData: true"), "no characterData:true observers");
 ok(clientSrc.includes("[data-conversation-scroll]"), "skip conversation scrollport");
-ok(clientSrc.includes("[data-agent-teams-panel-open]"), "skip AgentTeams panel");
+ok(clientSrc.includes("[data-team-panel]"), "skip AgentTeams panel");
+ok(!clientSrc.includes("[data-agent-teams-panel-open]"), "old AgentTeams selector removed");
 
 // 2) curated translate for a sample across locales (case-insensitive dict keys)
 locale.setLocale("fr");

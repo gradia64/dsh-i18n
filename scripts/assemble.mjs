@@ -154,7 +154,7 @@ window.__ModuleLoader__.load({
     // characterData. Walking those on every token stalls the renderer so the
     // model keeps running while glyphs never paint. Skip them; chrome/settings
     // still get conversion via childList.
-    const DOM_SKIP_SELECTOR = "input, textarea, select, [contenteditable], pre, code, script, style, [data-conversation-scroll], [data-composer-input], [data-composer-card], [data-composer-seat], [data-team-id], [data-agent-teams-panel-open], [data-agent-teams-collapsed], [data-recovery], [data-renderer-recovery], [data-boot-recovery]";
+    const DOM_SKIP_SELECTOR = "input, textarea, select, [contenteditable], pre, code, script, style, [data-conversation-scroll], [data-composer-input], [data-composer-card], [data-composer-seat], [data-team-id], [data-team-panel], [data-team-action], [data-recovery], [data-renderer-recovery], [data-boot-recovery]";
     const domConverted = new WeakMap(); // Text -> 原始字符串
     let domObserver = null;
     let domOriginalLang = null;
