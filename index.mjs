@@ -5,7 +5,11 @@
 // 用 ctx.llm.stream 做單次批量翻譯，供 client 側「自動翻譯」使用。
 // 預設用 agentDefaultModel（用戶主要模型），client 可傳 provider/model 覆寫。
 
+import { createRequire } from "node:module";
 import { BlockAssembler, createUserMessage } from "@deepseek-ai/dsh-llm";
+
+const require = createRequire(import.meta.url);
+const { version } = require("./package.json");
 
 const name = "dsh-i18n";
 const inject = ["llm"];
@@ -153,7 +157,7 @@ function apply(ctx) {
         return serverResponse(envelope.rpcId, await handler("translate", envelope.payload, request.signal));
       },
     }), "dsh-i18n: /api/dsh-i18n.translate route");
-    try { connectionCtx.logger?.info?.("[dsh-i18n] mounted /api/dsh-i18n.translate"); } catch { /* ignore */ }
+    try { connectionCtx.logger?.info?.(`[dsh-i18n] ${version} mounted /api/dsh-i18n.translate`); } catch { /* ignore */ }
   });
 }
 

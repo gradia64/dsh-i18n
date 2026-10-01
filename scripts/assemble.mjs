@@ -86,6 +86,7 @@ window.__ModuleLoader__.load({
     const CHARS = ${CHARS_JSON};
 
     const name = "dsh-i18n";
+    const PLUGIN_VERSION = ${JSON.stringify(pkg.version)};
     // locale is required for dictionary registration; connection is optional for LLM auto-MT.
     const inject = ["locale", "connection"];
 
@@ -143,6 +144,21 @@ window.__ModuleLoader__.load({
         else window.localStorage.setItem(STORAGE_KEY, value);
         for (const legacy of LEGACY_STORAGE_KEYS) window.localStorage.removeItem(legacy);
       } catch { /* 隐私模式等：忽略，语言选择在本次会话内生效 */ }
+    }
+    // Exact browser tag only (zh-HK, not zh). First launch with no saved choice.
+    function browserLocaleId() {
+      try {
+        const nav = typeof navigator !== "undefined" ? navigator : null;
+        if (!nav) return null;
+        const tags = [];
+        if (nav.languages && typeof nav.languages[Symbol.iterator] === "function") tags.push(...nav.languages);
+        if (nav.language) tags.push(nav.language);
+        for (const tag of tags) {
+          const hit = LANGUAGES.find((l) => localeKey(l.id) === localeKey(tag));
+          if (hit) return hit.id;
+        }
+      } catch { /* ignore */ }
+      return null;
     }
 
     // ---- DOM 级兜底轉換（僅 zh-TW）----
@@ -278,9 +294,8 @@ window.__ModuleLoader__.load({
     }
 
     // ---- 自動翻譯（LLM）----
-    // 當 active 係我哋嘅非繁中語言（ja/ko/fr/... 18 種）時，用 MutationObserver 捉
-    // 英文長文本（市場描述等），批量經 /dsh-i18n RPC 翻譯做目標語言。快取 + 冪等，
-    // 頂住 React re-render 覆寫；預設語言（en/zh）唔翻譯，繁中保留簡轉繁。
+    // 任何已選嘅插件語言（包括 zh-HK / zh-TW）都會捉「長英文」DOM 文本走 LLM。
+    // 繁中同時保留簡→繁字元轉換。對話串流 / composer 唔行 characterData，避免卡 renderer。
     let mtRefresh = null;
 
     function apply(ctx) {
@@ -385,16 +400,27 @@ window.__ModuleLoader__.load({
             throw error;
           }
         }
-        writePref(isOurs(id) ? (findLang(id)?.id ?? id) : null);
+        writePref(isOurs(id) ? (findLang(id)?.id ?? id) : String(id));
         syncDocumentLocale(locale.getLocale().active);
       };
 
       // 3) Persist across Host adopt() resets (async settings load can clobber active).
+      //    Empty storage + exact browser tag (zh-HK) seeds the choice once.
+      //    A stored built-in id (zh / en) is an explicit choice and is left alone.
       const activateIfPreferred = () => {
-        const pref = readPref();
-        if (pref === null || !isOurs(pref)) return;
+        let pref = readPref();
+        if (pref === null) {
+          const browser = browserLocaleId();
+          if (!browser) return;
+          pref = browser;
+          writePref(browser);
+        }
+        if (!isOurs(pref)) return;
         const want = findLang(pref)?.id ?? pref;
-        if (locale.getLocale().active === want) return;
+        if (locale.getLocale().active === want) {
+          syncDocumentLocale(want);
+          return;
+        }
         try {
           originalSetLocale(want);
         } catch {
@@ -421,10 +447,7 @@ window.__ModuleLoader__.load({
         let mtObserver = null;
 
         const mtActiveLang = () => locale.getLocale().active;
-        const mtIsTarget = (id) => {
-          const l = findLang(id);
-          return Boolean(l && !l.useConvert);
-        };
+        const mtIsTarget = (id) => Boolean(findLang(id));
         const mtLooksTranslatable = (text) => {
           const t = (text || "").trim();
           if (t.length < 24 || t.length > 2000) return false;
@@ -525,7 +548,7 @@ window.__ModuleLoader__.load({
       activateIfPreferred();
       syncDocumentLocale(locale.getLocale().active);
       try { window.setTimeout(() => syncDocumentLocale(locale.getLocale().active), 500); } catch { /* 忽略 */ }
-      console.info("[dsh-i18n] ready; active=", locale.getLocale().active, "languages=", LANGUAGES.length);
+      console.info("[dsh-i18n]", PLUGIN_VERSION, "ready; active=", locale.getLocale().active, "languages=", LANGUAGES.length);
     }
 
     module.exports = { name, inject, apply };

@@ -121,6 +121,8 @@ let failures = 0;
 const ok = (cond, name, detail = "") => { if (cond) console.log("PASS " + name); else { failures++; console.log("FAIL " + name + (detail ? ": " + detail : "")); } };
 
 ok(Array.isArray(mod.inject) && mod.inject.includes("locale"), "inject includes locale", JSON.stringify(mod.inject));
+ok(clientSrc.includes(pkg.version), "bundle embeds version " + pkg.version);
+ok(clientSrc.includes("browserLocaleId"), "bundle can seed from browser locale");
 ok(clientSrc.includes("addLanguage"), "bundle uses addLanguage");
 ok(clientSrc.includes("localeKey"), "bundle uses localeKey for dict lookups");
 

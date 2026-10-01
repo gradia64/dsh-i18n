@@ -18,8 +18,8 @@ const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"))
 
 const NODE_ENGINE = "^22.19.0 || >=24.0.0";
 const CORDIS = "^4.0.1";
-const LOCALE = ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <0.2.0-0";
-const LLM = ">=0.1.0-rc.2 <0.1.1 || >=0.1.1-rc.1 <0.2.0-0";
+const LOCALE = ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0";
+const LLM = ">=0.1.0-rc.2 <0.1.1 || >=0.1.1-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0";
 
 let failures = 0;
 const ok = (cond, name, detail = "") => {
@@ -40,6 +40,8 @@ const locale = pkg.peerDependencies?.["@deepseek-ai/dsh-client-locale"] ?? "";
 const llm = pkg.peerDependencies?.["@deepseek-ai/dsh-llm"] ?? "";
 ok(locale.includes(">=0.1.1-rc.1") && locale.includes("<0.2.0-0"), "locale range has 0.1.1-rc branch");
 ok(llm.includes(">=0.1.1-rc.1") && llm.includes("<0.2.0-0"), "llm range has 0.1.1-rc branch");
+ok(locale.includes(">=0.2.0-rc.1") && locale.includes("<0.3.0-0"), "locale range has 0.2.0-rc branch");
+ok(llm.includes(">=0.2.0-rc.1") && llm.includes("<0.3.0-0"), "llm range has 0.2.0-rc branch");
 
 console.log(failures === 0 ? "ALL PASS" : failures + " FAILURES");
 process.exit(failures === 0 ? 0 : 1);
