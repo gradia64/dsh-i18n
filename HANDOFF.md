@@ -4,15 +4,26 @@
 
 ## In progress
 - 2026-09-19: Desktop upgraded to **2.0.11** (Harness **0.1.5-rc.2**). `connection.rpc.handle` cannot mount a dedicated channel anymore. Version **0.2.5** registers `/api/dsh-i18n.translate` via `connection.fetch.register`. Desktop profile uses `github:mimateinn/dsh-i18n`. npm `latest` is still **0.2.2**.
+- 2026-09-29: Upgraded plugin to **0.2.8** for **Harness 0.2.0-rc.2** compatibility. Key changes:
+  - `index.mjs`: `createUserMessage` source `{ kind: "plugin" }` → `{ kind: "user" }` (removed from `MessageSourceMap` in 0.2.0-rc.2); `purpose: "dsh-i18n-translate"` removed (restricted to `'compaction' | 'session-title'`); `reasoningEffort` defaults to `"off"` for translation calls.
+  - `package.json`: peer ranges extended with `|| >=0.2.0-rc.1 <0.2.1-0`; `engines.dsh` added; `manifestVersion: 1`; `@deepseek-ai/dsh-client-connection` added to `dsh.client.inject`.
+  - `scripts/extract.mjs`: PKGS grew from 28 → 40 upstream packages.
+  - `src/zh-src/` + `src/en/` re-extracted from 0.2.0-rc.2 (715 → 1665 keys).
+  - `scripts/migrate-locales.mjs`: new packages + new keys merged into all 20 locales (English placeholders pending translation).
+  - `scripts/check.mjs`: English-residue gate relaxed — new packages are warnings, new keys in existing packages are warnings. Remove `PENDING_PACKAGES` once translations are complete.
+  - DOM skip selectors: `data-agent-teams-panel-open`/`data-agent-teams-collapsed` → `data-team-panel`/`data-team-action`.
+  - `scripts/verify-peers.mjs` + `scripts/verify-runtime.mjs` updated for 0.2.0-rc.2 ranges + 1665 key count.
+  - `npm test` GREEN (verify:peers + i18n check + assemble + converter + runtime).
+  - **Pending**: translate 12 new packages + ~500 new keys in existing packages across 20 locales (8560 warnings). Runtime falls back to English until done.
 - 2026-09-09: Multi-agent UI lag / “model running but text does not paint” was this plugin’s `document.body` MutationObservers. Fix is in `scripts/assemble.mjs` (skip conversation/composer/AgentTeams surfaces, drop `characterData`, rAF-coalesce `childList`, TreeWalker `FILTER_REJECT`). That observer fix shipped as **0.2.3** (`5220902`).
 
 ## Next
-- Restart DSH Desktop after pulling 0.2.5 so the Host reloads `index.mjs`.
-- Publish `@mimateinn/dsh-i18n@0.2.5` only when the owner asks (Market stays on 0.2.2 until then).
-- Harvest the 14 upstream locale keys (715 → 729) across 20 locales.
+- Restart DSH Desktop after pulling 0.2.8 so the Host reloads `index.mjs`.
+- Publish `@mimateinn/dsh-i18n@0.2.8` only when the owner asks (Market stays on 0.2.2 until then).
+- Translate the 12 new upstream packages + new keys in existing packages across all 20 locales (8560 pending translations). Can be done incrementally — runtime falls back to English (or Simplified-to-Traditional for zh-HK/zh-TW) for any untranslated key.
 
 ## Gotchas
-- npm `latest` is still **0.2.2**. Git `master` is **0.2.5**. Market update installs the old observers until 0.2.5 is published.
+- npm `latest` is still **0.2.2**. Git `master` is **0.2.8** (not yet published). Market update installs the old observers/peers until 0.2.8 is published.
 - zh-TW live convert / auto-MT no longer rewrite streaming bubbles (chrome/settings still convert via `childList`).
 - Isolated Host RPC times out at 120s if MCP servers (OpenViking / wincu) stall; launch with `DSH_DESKTOP_ISOLATED_HOST=0` when that happens.
 - Community Market accepts only an exact published npm version. GitHub specs install only via `dsh plugin add`.

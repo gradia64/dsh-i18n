@@ -2,7 +2,7 @@
 
 **[繁體中文（香港）](README.zh-HK.md)** · **[繁體中文（台灣）](README.zh-TW.md)** · [English](README.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Italiano](README.it.md) · [Русский](README.ru.md) · [Українська](README.uk.md) · [Polski](README.pl.md) · [Nederlands](README.nl.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [हिन्दी](README.hi.md) · [Bahasa Indonesia](README.id.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Svenska](README.sv.md)
 
-Ein nachhaltiges Internationalisierungs-Plugin für die DeepSeek Harness Web UI. Version 0.2.0 registriert **20 Locales** aus einer zentralen Registry und erhält dabei DSHs bestehende Client-ModuleLoader-Integration, den Locale-Dienst, die Präferenz-Migration und das Runtime-Fallback-Verhalten.
+Ein nachhaltiges Internationalisierungs-Plugin für die DeepSeek Harness Web UI. Version 0.2.8 registriert **20 Locales** aus einer zentralen Registry und erhält dabei DSHs bestehende Client-ModuleLoader-Integration, den Locale-Dienst, die Präferenz-Migration und das Runtime-Fallback-Verhalten.
 
 ## Locales
 

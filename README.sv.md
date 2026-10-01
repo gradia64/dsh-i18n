@@ -2,7 +2,7 @@
 
 **[繁體中文（香港）](README.zh-HK.md)** · **[繁體中文（台灣）](README.zh-TW.md)** · [English](README.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Italiano](README.it.md) · [Русский](README.ru.md) · [Українська](README.uk.md) · [Polski](README.pl.md) · [Nederlands](README.nl.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [हिन्दी](README.hi.md) · [Bahasa Indonesia](README.id.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Svenska](README.sv.md)
 
-Ett hållbart internationaliseringsplugin för DeepSeek Harness webbgränssnitt. Version 0.2.0 registrerar **20 språkversioner** från ett register samtidigt som DSH:s befintliga klientintegrering med ModuleLoader, språktjänst, preferensmigrering och runtime-fallback-beteende bevaras.
+Ett hållbart internationaliseringsplugin för DeepSeek Harness webbgränssnitt. Version 0.2.8 registrerar **20 språkversioner** från ett register samtidigt som DSH:s befintliga klientintegrering med ModuleLoader, språktjänst, preferensmigrering och runtime-fallback-beteende bevaras.
 
 ## Språk
 

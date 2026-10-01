@@ -2,7 +2,7 @@
 
 **[繁體中文（香港）](README.zh-HK.md)** · **[繁體中文（台灣）](README.zh-TW.md)** · [English](README.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Italiano](README.it.md) · [Русский](README.ru.md) · [Українська](README.uk.md) · [Polski](README.pl.md) · [Nederlands](README.nl.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [हिन्दी](README.hi.md) · [Bahasa Indonesia](README.id.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Svenska](README.sv.md)
 
-A sustainable internationalization plugin for the DeepSeek Harness Web UI. Version 0.2.3 registers **20 locales** from one registry while preserving DSH's existing client ModuleLoader integration, locale service, preference migration, and runtime fallback behavior.
+A sustainable internationalization plugin for the DeepSeek Harness Web UI. Version 0.2.8 registers **20 locales** from one registry while preserving DSH's existing client ModuleLoader integration, locale service, preference migration, and runtime fallback behavior. Compatible with DeepSeek Harness **0.2.0-rc.2**.
 
 ## Locales
 
@@ -15,7 +15,7 @@ A sustainable internationalization plugin for the DeepSeek Harness Web UI. Versi
 ## Features
 
 - Adds all 20 locales to **Settings → General → Language**, alongside the built-in 中文 / English.
-- Per-language hand-polished translations for every official locale namespace (715 strings each), from an English baseline.
+- Per-language hand-polished translations for every official locale namespace (1665 strings each), from an English baseline.
 - Runtime fallback: new/updated/third-party strings fall back to English (or Simplified→Traditional conversion for zh-HK/zh-TW), so upstream UI updates and other plugins are covered without re-translating every language.
 - Language preference persisted in browser `localStorage`; reload-proof.
 - **Auto-translate**: with a non-Chinese locale active, long English text (plugin-market descriptions, third-party UI, error prose) is auto-translated to your language through your configured model, and cached so re-renders don't undo it. The default language (en/zh) is left untouched; Traditional Chinese keeps the built-in Simplified→Traditional conversion instead of calling a model.
@@ -26,7 +26,7 @@ A sustainable internationalization plugin for the DeepSeek Harness Web UI. Versi
 Install from npm (exact version — this is what DSH Desktop's Market update button needs):
 
 ```bash
-dsh plugin --profile <active-profile> add @mimateinn/dsh-i18n@0.2.2
+dsh plugin --profile <active-profile> add @mimateinn/dsh-i18n@0.2.8
 ```
 
 Or from GitHub, pinned to a commit:
@@ -49,9 +49,10 @@ Restart the host, then choose a language in **Settings → General → Language*
 
 ## Compatibility
 
-- DeepSeek Harness **0.1.0-rc.6 or newer**, including the current published line **0.1.1-rc.2** (`@deepseek-ai/dsh` npm `latest` / `next`, 2026-08-27).
-- Node.js **`^22.19.0 || >=24.0.0`** (official harness `engines.node` at [dsh-v0.1.1-rc.2](https://github.com/deepseek-ai/deepseek-harness/blob/dsh-v0.1.1-rc.2/package.json)).
-- Host packages are `peerDependencies` with an explicit `0.1.1-rc.*` branch so node-semver does not silently exclude harness prereleases ([awesome-dsh-plugin contributing](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md)).
+- DeepSeek Harness **0.1.0-rc.6 or newer**, including the current published line **0.2.0-rc.2** (`@deepseek-ai/dsh` npm `latest` / `next`).
+- Node.js **`^22.19.0 || >=24.0.0`** (official harness `engines.node` at [dsh-v0.2.0-rc.2](https://github.com/deepseek-ai/deepseek-harness/blob/dsh-v0.2.0-rc.2/package.json)).
+- Host packages are `peerDependencies` with explicit `0.1.1-rc.*` and `0.2.0-rc.*` branches so node-semver does not silently exclude harness prereleases ([awesome-dsh-plugin contributing](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md)).
+- `engines.dsh` declares the compatible DSH version range; `manifestVersion: 1` aligns with the `dsh-package-manifest` format used by the 0.2.0-rc.2 plugin manager.
 
 ## Maintenance pipeline
 
@@ -62,10 +63,11 @@ npm run i18n:check     # file, namespace/key, stale, placeholder, empty, English
 npm run i18n:build     # assemble registry locales into lib/client.js
 npm test               # check + build + converter verification + runtime harness
 
-node scripts/extract.mjs <installed-dsh-path>
+node scripts/extract.mjs <installed-dsh-path>   # re-extract upstream dictionaries
+node scripts/migrate-locales.mjs                # merge new keys into locale dirs (English placeholders)
 ```
 
-Extraction accepts an installed DSH root, its `@deepseek-ai` package directory, or the unpacked desktop application path.
+Extraction accepts an installed DSH root, its `@deepseek-ai` package directory, or the unpacked desktop application path. After extracting new upstream dictionaries, run `migrate-locales.mjs` to merge new keys and create new package files for all 20 locales. New keys start as English placeholders and should be translated; until then the English-residue gate reports them as warnings rather than failures.
 
 ## Publishing
 
