@@ -1,6 +1,6 @@
 // index.mjs — dsh-i18n 插件（Host 側）
 //
-// 提供 /api/dsh-i18n.translate Fetch 路由（Harness 0.1.5+）：
+// 提供 /api/dsh-i18n.translate Fetch 路由（Harness 0.2.0-rc.2+）：
 // translate({texts, targetLang, provider?, model?, reasoningEffort?}) → { translations }。
 // 用 ctx.llm.stream 做單次批量翻譯，供 client 側「自動翻譯」使用。
 // 預設用 agentDefaultModel（用戶主要模型），client 可傳 provider/model 覆寫。
@@ -33,20 +33,22 @@ async function translate(ctx, texts, targetLang, route, signal) {
   const messages = [
     createUserMessage({
       content: [{ type: "text", text: JSON.stringify({ texts, targetLang }) }],
-      source: { kind: "plugin", plugin: "dsh-i18n" },
+      source: { kind: "user" },
     }),
   ];
   const assembler = new BlockAssembler();
   const options = {
     provider: route.provider,
     model: route.model,
-    ...(route.reasoningEffort === undefined ? {} : { reasoningEffort: route.reasoningEffort }),
+    // DSH 0.2.0-rc.2: `purpose` is restricted to 'compaction' | 'session-title'.
+    // Translation is a one-shot task that does not need reasoning; default to
+    // off when the caller did not pin an effort explicitly.
+    reasoningEffort: route.reasoningEffort ?? "off",
     messages,
     system:
       "You are a professional translator. Translate each string in the JSON input array to " +
       targetLang +
       ". Return ONLY a JSON array of strings, same length and order as input. No commentary, no markdown fences.",
-    purpose: "dsh-i18n-translate",
     ...(signal ? { signal } : {}),
   };
   for await (const chunk of ctx.llm.stream(options)) {
@@ -91,9 +93,9 @@ function resolveModelRoute(ctx, payload) {
 }
 
 function apply(ctx) {
-  // Harness 0.1.5-rc.2: connection.rpc.handle uses the connection fiber's
+  // Harness 0.2.0-rc.2: connection.rpc.handle uses the connection fiber's
   // webServer, which that plugin no longer injects. Mount an exact /api
-  // Fetch route instead (same pattern as dsh-plugin-subscriptions).
+  // Fetch route instead via connection.fetch.register.
   ctx.inject(["connection"], (connectionCtx) => {
     const connection = connectionCtx.get("connection");
     const handler = async (endpoint, payload, signal) => {
