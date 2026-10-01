@@ -15,7 +15,7 @@ A sustainable internationalization plugin for the DeepSeek Harness Web UI. Versi
 ## Features
 
 - Adds all 20 locales to **Settings → General → Language**, alongside the built-in 中文 / English.
-- Per-language hand-polished translations for every official locale namespace (1665 strings each), from an English baseline.
+- Per-language translations from an English baseline (1665 keys per locale after the 0.2.0-rc.2 re-extraction; keys added in that update are English placeholders pending translation).
 - Runtime fallback: new/updated/third-party strings fall back to English (or Simplified→Traditional conversion for zh-HK/zh-TW), so upstream UI updates and other plugins are covered without re-translating every language.
 - Language preference persisted in browser `localStorage`; reload-proof.
 - **Auto-translate**: with a non-Chinese locale active, long English text (plugin-market descriptions, third-party UI, error prose) is auto-translated to your language through your configured model, and cached so re-renders don't undo it. The default language (en/zh) is left untouched; Traditional Chinese keeps the built-in Simplified→Traditional conversion instead of calling a model.
