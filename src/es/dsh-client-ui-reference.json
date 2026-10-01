@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "Archivos y carpetas",
+        "section.subagents": "Subagents",
         "section.sessions": "Conversaciones de sesión",
-        "candidate.file": "Archivo",
-        "candidate.folder": "Carpeta",
-        "candidate.session": "Sesión",
-        "candidate.noCwd": "(sin directorio de trabajo)"
+        "candidate.noCwd": "(sin directorio de trabajo)",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

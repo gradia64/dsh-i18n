@@ -8,6 +8,10 @@
         "skill": "Beceriler",
         "subagent": "Alt ajanlar",
         "loading": "Yükleniyor…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "Tetikleyici önerileri"
       }
     }

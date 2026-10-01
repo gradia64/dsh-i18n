@@ -7,7 +7,8 @@
         "session.new": "Nuova sessione",
         "session.new.label": "Nuova sessione",
         "toggle.open": "Apri barra laterale",
-        "toggle.collapse": "Comprimi la barra laterale"
+        "toggle.collapse": "Comprimi la barra laterale",
+        "panels.label": "Global panels"
       }
     }
   ]

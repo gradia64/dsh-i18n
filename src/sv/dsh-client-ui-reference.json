@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "Filer och mappar",
+        "section.subagents": "Subagents",
         "section.sessions": "Sessionskonversationer",
-        "candidate.file": "Fil",
-        "candidate.folder": "Mapp",
-        "candidate.session": "Session",
-        "candidate.noCwd": "(ingen cwd)"
+        "candidate.noCwd": "(ingen cwd)",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

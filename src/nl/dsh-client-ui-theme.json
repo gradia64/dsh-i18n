@@ -7,7 +7,12 @@
         "appearance.title": "Weergave",
         "appearance.light": "Licht",
         "appearance.dark": "Donker",
-        "appearance.system": "Systeem"
+        "appearance.system": "Systeem",
+        "fontSize.title": "Font size",
+        "fontSize.description": "Only affects conversation content",
+        "fontSize.unit": "px",
+        "fontSize.increase": "Increase font size",
+        "fontSize.decrease": "Decrease font size"
       }
     }
   ]

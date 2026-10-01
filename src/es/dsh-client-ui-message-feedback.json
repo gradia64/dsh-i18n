@@ -8,14 +8,22 @@
         "action.likeActive": "Quitar valoración",
         "action.dislike": "Mala respuesta",
         "action.dislikeActive": "Quitar valoración",
-        "note.open": "Añadir una nota",
-        "note.placeholder": "¿Qué estuvo bien o qué salió mal? (opcional)",
-        "note.save": "Guardar",
-        "note.cancel": "Cancelar",
-        "note.aria": "Nota de valoración",
+        "dialog.title": "Submit feedback",
+        "dialog.categories": "Feedback category",
+        "dialog.detail": "Feedback details",
+        "dialog.hint": "Add details to help us improve. Your submission will include the current conversation log.",
+        "category.task-result": "Task result",
+        "category.instruction-following": "Instruction understanding and following",
+        "category.product-interaction": "Product features and interaction",
+        "category.service-stability": "Stability and speed",
+        "category.resource-cost": "Resource usage and cost",
+        "category.security-privacy-permission": "Security, privacy, and permissions",
+        "category.other": "Other",
+        "toast.recorded": "Thanks for your feedback",
         "error.conflict": "Esta valoración cambió en otro lugar; se muestra el estado más reciente",
         "error.load": "No se pudo cargar la valoración",
-        "error.generic": "No se pudo guardar la valoración"
+        "error.generic": "No se pudo guardar la valoración",
+        "error.noteTooLarge": "The description is too long; shorten it and submit again"
       }
     }
   ]

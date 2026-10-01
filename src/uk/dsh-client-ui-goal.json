@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "Поточна ціль",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "Призупинена ціль",
         "phase.blocked": "Заблокована ціль",
         "objective.aria": "Завдання цілі",

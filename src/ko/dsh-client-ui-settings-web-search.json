@@ -1,0 +1,28 @@
+{
+  "pkg": "dsh-client-ui-settings-web-search",
+  "entries": [
+    {
+      "ns": "settings.webSearch",
+      "dict": {
+        "title": "Web search",
+        "description": "Set up the DeepSeek search provider.",
+        "apiKey": "API key",
+        "apiKeyHint": "Stored outside the settings file. Leave blank to keep the current key.",
+        "apiKeySet": "A key is configured.",
+        "apiKeyUnset": "No key is configured; only conversations using a DeepSeek Account model can search, through the default endpoint.",
+        "baseUrl": "Endpoint",
+        "baseUrlHint": "Leave blank to use the provider default.",
+        "maxUses": "Max searches per request",
+        "maxUsesHint": "How many times one request may search before it must answer.",
+        "overridden": "Overridden",
+        "reset": "Reset to default",
+        "readOnly": "This deployment stores settings read-only.",
+        "unavailable": "This plugin is not loaded, so it cannot be configured right now.",
+        "save": "Save",
+        "saving": "Saving…",
+        "saveFailed": "The deployment did not accept these values; they were left for you to correct.",
+        "invalidNumber": "Enter a number, or leave blank to use the default."
+      }
+    }
+  ]
+}

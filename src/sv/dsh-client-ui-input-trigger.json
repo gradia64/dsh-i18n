@@ -8,6 +8,10 @@
         "skill": "Färdigheter",
         "subagent": "Underagenter",
         "loading": "Läser in…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "Utlösarförslag"
       }
     }

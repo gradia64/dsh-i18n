@@ -8,14 +8,22 @@
         "action.likeActive": "Remover avaliação",
         "action.dislike": "Resposta ruim",
         "action.dislikeActive": "Remover avaliação",
-        "note.open": "Adicionar observação",
-        "note.placeholder": "O que ficou bom ou o que deu errado? (opcional)",
-        "note.save": "Salvar",
-        "note.cancel": "Cancelar",
-        "note.aria": "Observação de feedback",
+        "dialog.title": "Submit feedback",
+        "dialog.categories": "Feedback category",
+        "dialog.detail": "Feedback details",
+        "dialog.hint": "Add details to help us improve. Your submission will include the current conversation log.",
+        "category.task-result": "Task result",
+        "category.instruction-following": "Instruction understanding and following",
+        "category.product-interaction": "Product features and interaction",
+        "category.service-stability": "Stability and speed",
+        "category.resource-cost": "Resource usage and cost",
+        "category.security-privacy-permission": "Security, privacy, and permissions",
+        "category.other": "Other",
+        "toast.recorded": "Thanks for your feedback",
         "error.conflict": "Este feedback mudou em outro lugar; o estado mais recente está sendo exibido",
         "error.load": "Não foi possível carregar o feedback",
-        "error.generic": "Não foi possível salvar o feedback"
+        "error.generic": "Não foi possível salvar o feedback",
+        "error.noteTooLarge": "The description is too long; shorten it and submit again"
       }
     }
   ]

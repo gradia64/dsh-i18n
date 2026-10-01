@@ -7,7 +7,12 @@
         "appearance.title": "المظهر",
         "appearance.light": "فاتح",
         "appearance.dark": "داكن",
-        "appearance.system": "النظام"
+        "appearance.system": "النظام",
+        "fontSize.title": "Font size",
+        "fontSize.description": "Only affects conversation content",
+        "fontSize.unit": "px",
+        "fontSize.increase": "Increase font size",
+        "fontSize.decrease": "Decrease font size"
       }
     }
   ]

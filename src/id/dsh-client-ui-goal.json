@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "Tujuan yang Sedang Berlangsung",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "Tujuan Dijeda",
         "phase.blocked": "Gol Terblokir",
         "objective.aria": "Tujuan sasaran",

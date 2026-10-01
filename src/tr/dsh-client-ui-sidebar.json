@@ -7,7 +7,8 @@
         "session.new": "Yeni Oturum",
         "session.new.label": "Yeni oturum",
         "toggle.open": "Kenar çubuğunu aç",
-        "toggle.collapse": "Kenar çubuğunu daralt"
+        "toggle.collapse": "Kenar çubuğunu daralt",
+        "panels.label": "Global panels"
       }
     }
   ]

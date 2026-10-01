@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "Pågående mål",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "Pausat mål",
         "phase.blocked": "Blockerat mål",
         "objective.aria": "Målbeskrivning",

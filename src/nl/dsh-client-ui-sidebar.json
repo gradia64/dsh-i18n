@@ -7,7 +7,8 @@
         "session.new": "Nieuwe sessie",
         "session.new.label": "Nieuwe sessie",
         "toggle.open": "Zijbalk openen",
-        "toggle.collapse": "Zijbalk inklappen"
+        "toggle.collapse": "Zijbalk inklappen",
+        "panels.label": "Global panels"
       }
     }
   ]

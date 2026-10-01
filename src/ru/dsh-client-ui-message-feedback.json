@@ -8,14 +8,22 @@
         "action.likeActive": "Удалить оценку",
         "action.dislike": "Плохой ответ",
         "action.dislikeActive": "Удалить оценку",
-        "note.open": "Добавить заметку",
-        "note.placeholder": "Что было хорошо, а что пошло не так? (необязательный)",
-        "note.save": "Сохранять",
-        "note.cancel": "Отмена",
-        "note.aria": "Примечание к отзыву",
+        "dialog.title": "Submit feedback",
+        "dialog.categories": "Feedback category",
+        "dialog.detail": "Feedback details",
+        "dialog.hint": "Add details to help us improve. Your submission will include the current conversation log.",
+        "category.task-result": "Task result",
+        "category.instruction-following": "Instruction understanding and following",
+        "category.product-interaction": "Product features and interaction",
+        "category.service-stability": "Stability and speed",
+        "category.resource-cost": "Resource usage and cost",
+        "category.security-privacy-permission": "Security, privacy, and permissions",
+        "category.other": "Other",
+        "toast.recorded": "Thanks for your feedback",
         "error.conflict": "Этот отзыв изменился в другом месте; отображается последнее состояние",
         "error.load": "Не удалось загрузить отзыв.",
-        "error.generic": "Не удалось сохранить отзыв"
+        "error.generic": "Не удалось сохранить отзыв",
+        "error.noteTooLarge": "The description is too long; shorten it and submit again"
       }
     }
   ]

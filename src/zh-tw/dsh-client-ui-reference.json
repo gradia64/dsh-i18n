@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "檔案與資料夾",
+        "section.subagents": "Subagents",
         "section.sessions": "Session 會話",
-        "candidate.file": "檔案",
-        "candidate.folder": "資料夾",
-        "candidate.session": "Session",
-        "candidate.noCwd": "（無工作目錄）"
+        "candidate.noCwd": "（無工作目錄）",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

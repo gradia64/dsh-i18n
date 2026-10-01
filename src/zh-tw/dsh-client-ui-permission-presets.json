@@ -4,11 +4,23 @@
     {
       "ns": "permission.access",
       "dict": {
+        "mode": "Access mode, current: {name}",
+        "close": "Close",
+        "preset.readOnly": "Read Only",
+        "preset.workspaceWrite": "Workspace Write",
+        "preset.fullAccess": "Full access",
         "confirm.title": "確認啟用 Full access？",
         "confirm.description": "啟用 Full access 後，agent 將減少確認步驟，並且可以直接執行更多操作，包括敏感操作、檔案修改或外部命令。僅建議在你信任目前任務時使用。",
         "confirm.acknowledge": "我已了解風險，並願意繼續",
         "confirm.cancel": "取消",
-        "confirm.enable": "啟用 Full access"
+        "confirm.enable": "啟用 Full access",
+        "auto.label": "Auto review",
+        "auto.badge": "EXP",
+        "auto.description": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
+        "auto.confirm.title": "Enable Auto review (experimental)?",
+        "auto.confirm.description": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it; you approve or reject each call it denies. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+        "auto.confirm.acknowledge": "I understand these risks and want to continue",
+        "auto.confirm.enable": "Enable Auto review"
       }
     },
     {
@@ -18,6 +30,9 @@
         "description": "選擇新會話的預設權限模式",
         "loading": "載入中",
         "unavailable": "不可用",
+        "preset.readOnly": "Read Only",
+        "preset.workspaceWrite": "Workspace Write",
+        "preset.fullAccess": "Full access",
         "confirm.title": "確認啟用 Full access？",
         "confirm.description": "啟用 Full access 後，新會話將減少確認步驟，並且可以直接執行更多操作，包括敏感操作、檔案修改或外部命令。僅建議在你信任後續任務時使用。",
         "confirm.acknowledge": "我已了解風險，並願意繼續",

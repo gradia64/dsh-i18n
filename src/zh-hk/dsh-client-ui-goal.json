@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "進行中的目標",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "已暫停的目標",
         "phase.blocked": "受阻的目標",
         "objective.aria": "目標內容",

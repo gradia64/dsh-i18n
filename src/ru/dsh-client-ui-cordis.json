@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Зарегистрировать плагин Cordis",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Запустите плагин Cordis",
         "row.updateTitle": "Обновить плагин Cordis",
         "row.stopTitle": "Остановить плагин Cordis",
@@ -42,6 +43,7 @@
         "action.remove": "Удалять",
         "action.retry": "Повторить попытку",
         "action.rollback": "Откат назад",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "Не удалось выполнить рендеринг в {slot}; пользовательский интерфейс по умолчанию был восстановлен:",
         "render.failedHeld": "Не удалось выполнить рендеринг в {slot}:",
         "a11y.defining": "Определение плагина",

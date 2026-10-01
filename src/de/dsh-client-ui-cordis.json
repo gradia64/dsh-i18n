@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Cordis-Plugin registrieren",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Cordis-Plugin ausführen",
         "row.updateTitle": "Cordis-Plugin aktualisieren",
         "row.stopTitle": "Cordis-Plugin beenden",
@@ -42,6 +43,7 @@
         "action.remove": "Entfernen",
         "action.retry": "Erneut versuchen",
         "action.rollback": "Zurücksetzen",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "Rendering in {slot} fehlgeschlagen; die Standard-Oberfläche wurde wiederhergestellt:",
         "render.failedHeld": "Rendering in {slot} fehlgeschlagen:",
         "a11y.defining": "Plugin wird definiert",

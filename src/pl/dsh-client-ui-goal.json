@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "Cel w toku",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "Cel wstrzymany",
         "phase.blocked": "Cel zablokowany",
         "objective.aria": "Treść celu",

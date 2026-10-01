@@ -8,14 +8,22 @@
         "action.likeActive": "評価を削除",
         "action.dislike": "悪い回答",
         "action.dislikeActive": "評価を削除",
-        "note.open": "メモを追加",
-        "note.placeholder": "良かった点や問題点は？（任意）",
-        "note.save": "保存",
-        "note.cancel": "キャンセル",
-        "note.aria": "フィードバックメモ",
+        "dialog.title": "Submit feedback",
+        "dialog.categories": "Feedback category",
+        "dialog.detail": "Feedback details",
+        "dialog.hint": "Add details to help us improve. Your submission will include the current conversation log.",
+        "category.task-result": "Task result",
+        "category.instruction-following": "Instruction understanding and following",
+        "category.product-interaction": "Product features and interaction",
+        "category.service-stability": "Stability and speed",
+        "category.resource-cost": "Resource usage and cost",
+        "category.security-privacy-permission": "Security, privacy, and permissions",
+        "category.other": "Other",
+        "toast.recorded": "Thanks for your feedback",
         "error.conflict": "このフィードバックは別の場所で変更されたため、最新の状態を表示しています",
         "error.load": "フィードバックを読み込めませんでした",
-        "error.generic": "フィードバックを保存できませんでした"
+        "error.generic": "フィードバックを保存できませんでした",
+        "error.noteTooLarge": "The description is too long; shorten it and submit again"
       }
     }
   ]

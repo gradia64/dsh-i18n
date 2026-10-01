@@ -4,6 +4,9 @@
     {
       "ns": "session-log-download",
       "dict": {
+        "header.more": "More actions",
+        "menu.download": "Download session log",
+        "menu.feedback": "Feedback",
         "dialog.preparingTitle": "सत्र निर्यात हो रहा है",
         "dialog.preparingDescription": "इस सत्र, इसके उप-सत्रों और अटैचमेंट वाली ZIP तैयार की जा रही है।",
         "dialog.successTitle": "सत्र डाउनलोड शुरू हो गया",

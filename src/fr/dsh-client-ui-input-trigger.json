@@ -8,6 +8,10 @@
         "skill": "Compétences",
         "subagent": "Sous-agents",
         "loading": "Chargement…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "Suggestions de déclencheurs"
       }
     }

@@ -8,14 +8,22 @@
         "action.likeActive": "Beoordeling verwijderen",
         "action.dislike": "Slecht antwoord",
         "action.dislikeActive": "Beoordeling verwijderen",
-        "note.open": "Notitie toevoegen",
-        "note.placeholder": "Wat ging goed of wat ging er mis? (optioneel)",
-        "note.save": "Opslaan",
-        "note.cancel": "Annuleren",
-        "note.aria": "Feedbacknotitie",
+        "dialog.title": "Submit feedback",
+        "dialog.categories": "Feedback category",
+        "dialog.detail": "Feedback details",
+        "dialog.hint": "Add details to help us improve. Your submission will include the current conversation log.",
+        "category.task-result": "Task result",
+        "category.instruction-following": "Instruction understanding and following",
+        "category.product-interaction": "Product features and interaction",
+        "category.service-stability": "Stability and speed",
+        "category.resource-cost": "Resource usage and cost",
+        "category.security-privacy-permission": "Security, privacy, and permissions",
+        "category.other": "Other",
+        "toast.recorded": "Thanks for your feedback",
         "error.conflict": "Deze feedback changed elsewhere; the latest state is shown",
         "error.load": "Kon niet load feedback",
-        "error.generic": "Kon niet save feedback"
+        "error.generic": "Kon niet save feedback",
+        "error.noteTooLarge": "The description is too long; shorten it and submit again"
       }
     }
   ]

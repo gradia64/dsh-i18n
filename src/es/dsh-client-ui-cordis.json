@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Registrar plugin de Cordis",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Ejecutar plugin de Cordis",
         "row.updateTitle": "Actualizar plugin de Cordis",
         "row.stopTitle": "Detener plugin de Cordis",
@@ -42,6 +43,7 @@
         "action.remove": "Quitar",
         "action.retry": "Reintentar",
         "action.rollback": "Revertir",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "Error de renderizado en {slot}; se restauró la interfaz predeterminada:",
         "render.failedHeld": "Error de renderizado en {slot}:",
         "a11y.defining": "Definiendo el plugin",

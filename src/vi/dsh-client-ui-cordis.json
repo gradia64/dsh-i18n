@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Đăng ký plugin Cordis",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Chạy plugin Cordis",
         "row.updateTitle": "Cập nhật plugin Cordis",
         "row.stopTitle": "Dừng plugin Cordis",
@@ -42,6 +43,7 @@
         "action.remove": "Gỡ",
         "action.retry": "Thử lại",
         "action.rollback": "Khôi phục bản trước",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "Kết xuất thất bại tại {slot}; giao diện mặc định đã được khôi phục:",
         "render.failedHeld": "Kết xuất thất bại tại {slot}:",
         "a11y.defining": "Đang định nghĩa plugin",

@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "Файлы и папки",
+        "section.subagents": "Subagents",
         "section.sessions": "Сеансовые беседы",
-        "candidate.file": "Файл",
-        "candidate.folder": "Папка",
-        "candidate.session": "Сессия",
-        "candidate.noCwd": "(без КДВ)"
+        "candidate.noCwd": "(без КДВ)",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

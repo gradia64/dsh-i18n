@@ -7,7 +7,8 @@
         "session.new": "नया सत्र",
         "session.new.label": "नया सत्र",
         "toggle.open": "साइडबार खोलें",
-        "toggle.collapse": "साइडबार समेटें"
+        "toggle.collapse": "साइडबार समेटें",
+        "panels.label": "Global panels"
       }
     }
   ]

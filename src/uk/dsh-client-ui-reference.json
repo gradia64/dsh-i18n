@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "Файли та теки",
+        "section.subagents": "Subagents",
         "section.sessions": "Розмови сесій",
-        "candidate.file": "Файл",
-        "candidate.folder": "Тека",
-        "candidate.session": "Сесія",
-        "candidate.noCwd": "(немає робочої теки)"
+        "candidate.noCwd": "(немає робочої теки)",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "Devam Eden Hedef",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "Duraklatılmış Hedef",
         "phase.blocked": "Engellenmiş Hedef",
         "objective.aria": "Hedef amacı",

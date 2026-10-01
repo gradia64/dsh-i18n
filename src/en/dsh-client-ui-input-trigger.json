@@ -8,6 +8,10 @@
         "skill": "Skills",
         "subagent": "Subagents",
         "loading": "Loading…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "Trigger suggestions"
       }
     }

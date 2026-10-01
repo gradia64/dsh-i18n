@@ -4,9 +4,12 @@
     {
       "ns": "model",
       "dict": {
+        "provider.account": "DeepSeek Account",
+        "command.label": "Model",
         "command.description": "Seleziona il modello per questa conversazione",
         "option.loadError": "Caricamento del catalogo non riuscito: {message}",
         "trigger.fallback": "Seleziona modello",
+        "trigger.loading": "Loading models…",
         "trigger.selectAria": "Seleziona modello",
         "trigger.aria": "Seleziona modello, attuale {model}",
         "trigger.ariaEffort": "Selezionare il modello, {model} corrente, sforzo di ragionamento {effort}",
@@ -16,10 +19,13 @@
         "effort.providerDefault": "Predefinito",
         "status.loading": "Aggiornamento dell'elenco dei modelli in corso...",
         "error.action": "Operazione del modello non riuscita: {message}",
+        "error.sessionInUse": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
         "action.reload": "Ricarica",
         "warning.groupLoad": "Impossibile caricare {name}: {message}",
+        "search.placeholder": "Search models…",
+        "search.clear": "Clear search",
+        "search.empty": "No matching models.",
         "empty.models": "Nessun modello disponibile.",
-        "blocked.composer": "Questo modello non è disponibile — selezionane uno per continuare",
         "empty.efforts": "Questo modello non fornisce livelli di sforzo di ragionamento."
       }
     }

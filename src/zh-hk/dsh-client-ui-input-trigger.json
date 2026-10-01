@@ -8,6 +8,10 @@
         "skill": "技能",
         "subagent": "子代理",
         "loading": "正在載入…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "觸發候選建議"
       }
     }

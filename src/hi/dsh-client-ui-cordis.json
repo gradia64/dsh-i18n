@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Cordis प्लगिन पंजीकृत करें",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Cordis प्लगिन चलाएँ",
         "row.updateTitle": "Cordis प्लगिन अपडेट करें",
         "row.stopTitle": "Cordis प्लगिन रोकें",
@@ -42,6 +43,7 @@
         "action.remove": "हटाएँ",
         "action.retry": "फिर कोशिश करें",
         "action.rollback": "वापस लौटाएँ",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "{slot} में रेंडरिंग विफल रही; डिफ़ॉल्ट UI बहाल कर दिया गया:",
         "render.failedHeld": "{slot} में रेंडरिंग विफल रही:",
         "a11y.defining": "प्लगिन परिभाषित किया जा रहा है",

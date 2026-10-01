@@ -4,11 +4,23 @@
     {
       "ns": "permission.access",
       "dict": {
+        "mode": "Access mode, current: {name}",
+        "close": "Close",
+        "preset.readOnly": "Read Only",
+        "preset.workspaceWrite": "Workspace Write",
+        "preset.fullAccess": "Full access",
         "confirm.title": "Abilitare l'accesso completo?",
         "confirm.description": "L'accesso completo riduce i passaggi di conferma e consente all'agente di eseguire direttamente più azioni, tra cui operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi dell'attività corrente.",
         "confirm.acknowledge": "Comprendo i rischi e voglio continuare",
         "confirm.cancel": "Annulla",
-        "confirm.enable": "Abilita accesso completo"
+        "confirm.enable": "Abilita accesso completo",
+        "auto.label": "Auto review",
+        "auto.badge": "EXP",
+        "auto.description": "Run without a sandbox after an experimental same-model review of every native tool call and PTC inner call.",
+        "auto.confirm.title": "Enable Auto review (experimental)?",
+        "auto.confirm.description": "Auto review runs without a sandbox. Before every native tool call and PTC inner call, the same model as the current agent reviews whether to allow it; you approve or reject each call it denies. This feature is experimental, can falsely allow or deny actions, and uses additional tokens.",
+        "auto.confirm.acknowledge": "I understand these risks and want to continue",
+        "auto.confirm.enable": "Enable Auto review"
       }
     },
     {
@@ -18,6 +30,9 @@
         "description": "Scegli la modalità di autorizzazione predefinita per le nuove sessioni",
         "loading": "Caricamento",
         "unavailable": "Non disponibile",
+        "preset.readOnly": "Read Only",
+        "preset.workspaceWrite": "Workspace Write",
+        "preset.fullAccess": "Full access",
         "confirm.title": "Abilitare l'accesso completo?",
         "confirm.description": "L'accesso completo consente alle nuove sessioni di ridurre i passaggi di conferma ed eseguire direttamente più azioni, tra cui operazioni sensibili, modifiche ai file o comandi esterni. Usalo solo quando ti fidi delle attività successive.",
         "confirm.acknowledge": "Comprendo i rischi e voglio continuare",

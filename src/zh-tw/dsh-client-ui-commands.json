@@ -4,6 +4,26 @@
     {
       "ns": "command",
       "dict": {
+        "section.add": "Add",
+        "section.commands": "Commands",
+        "label.goal": "Goal",
+        "label.plan": "Plan",
+        "label.feedback": "Feedback",
+        "label.compact": "Compact",
+        "label.permission": "Permission",
+        "label.export": "Export",
+        "description.goal": "Set or view the goal for a long-running task",
+        "description.plan": "Enter or leave plan mode",
+        "description.feedback": "Record feedback about this session",
+        "description.compact": "Compact older conversation history",
+        "description.permission": "Switch the permission preset (sandbox mode + approval policy)",
+        "description.export": "Download this Session log as a ZIP archive",
+        "token.goal": "goal",
+        "token.plan": "plan",
+        "token.feedback": "feedback",
+        "token.compact": "compact",
+        "token.permission": "permission",
+        "token.export": "export",
         "search.placeholder": "搜尋…",
         "search.aria": "篩選選項",
         "status.loading": "正在載入選項…",
@@ -11,7 +31,7 @@
         "status.empty": "無選項",
         "overlay.aria": "/{command} 選項",
         "listbox.aria": "/{command} 相符項目",
-        "notice.imagesUnsupported": "/{command} 不接受圖片附件，請先移除圖片"
+        "notice.attachmentsUnsupported": "/{command} does not accept attachments; remove them first"
       }
     }
   ]

@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "Tệp và thư mục",
+        "section.subagents": "Subagents",
         "section.sessions": "Trò chuyện trong phiên",
-        "candidate.file": "Tệp",
-        "candidate.folder": "Thư mục",
-        "candidate.session": "Phiên",
-        "candidate.noCwd": "(không có cwd)"
+        "candidate.noCwd": "(không có cwd)",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

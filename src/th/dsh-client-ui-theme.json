@@ -7,7 +7,12 @@
         "appearance.title": "ลักษณะที่ปรากฏ",
         "appearance.light": "สว่าง",
         "appearance.dark": "มืด",
-        "appearance.system": "ตามระบบ"
+        "appearance.system": "ตามระบบ",
+        "fontSize.title": "Font size",
+        "fontSize.description": "Only affects conversation content",
+        "fontSize.unit": "px",
+        "fontSize.increase": "Increase font size",
+        "fontSize.decrease": "Decrease font size"
       }
     }
   ]

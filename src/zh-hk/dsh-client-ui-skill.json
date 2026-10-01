@@ -4,10 +4,13 @@
     {
       "ns": "skill",
       "dict": {
+        "row.title": "Skill",
         "row.running": "正在載入 skill",
+        "row.preparing": "Preparing to load a skill",
         "row.failed": "skill 載入失敗",
         "row.stopped": "skill 載入已中止",
         "row.instructions": "說明",
+        "row.inspect": "Inspect",
         "menu.userOnly": "僅限用戶"
       }
     }
