@@ -5,7 +5,7 @@
 // shares that exact major.minor.patch tuple *and* itself carries a prerelease
 // tag. A range like `>=0.2.0-rc.1` therefore matches 0.2.0-rc.* but silently
 // excludes 0.2.0 (stable). awesome-dsh-plugin contributing requires the
-// `|| >=0.2.0-rc.1 <0.2.1-0` shape for the current 0.2.0-rc line.
+// `|| >=0.2.0-rc.1 <0.3.0-0` shape for the current 0.2.0-rc line.
 //
 // The ranges also retain the older 0.1.1-rc.* line so installs that haven't
 // upgraded yet are not blocked.
@@ -19,7 +19,7 @@ import path from "node:path";
 const root = path.join(import.meta.dirname, "..");
 const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
 
-const DSH_ENGINE = ">=0.1.1-rc.2 <0.2.1-0";
+const DSH_ENGINE = ">=0.1.1-rc.2 <0.3.0-0";
 const NODE_ENGINE = "^22.19.0 || >=24.0.0";
 const CORDIS = "^4.0.1";
 const LOCALE = ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0";
@@ -44,7 +44,6 @@ ok(pkg.peerDependencies?.["@deepseek-ai/dsh-llm"] === LLM, "dsh-llm range", JSON
 const locale = pkg.peerDependencies?.["@deepseek-ai/dsh-client-locale"] ?? "";
 const llm = pkg.peerDependencies?.["@deepseek-ai/dsh-llm"] ?? "";
 ok(locale.includes(">=0.1.1-rc.1") && locale.includes("<0.2.0-0"), "locale range has 0.1.1-rc branch");
-ok(locale.includes(">=0.2.0-rc.1") && locale.includes("<0.2.1-0"), "locale range has 0.2.0-rc branch");
 ok(llm.includes(">=0.1.1-rc.1") && llm.includes("<0.2.0-0"), "llm range has 0.1.1-rc branch");
 ok(locale.includes(">=0.2.0-rc.1") && locale.includes("<0.3.0-0"), "locale range has 0.2.0-rc branch");
 ok(llm.includes(">=0.2.0-rc.1") && llm.includes("<0.3.0-0"), "llm range has 0.2.0-rc branch");
