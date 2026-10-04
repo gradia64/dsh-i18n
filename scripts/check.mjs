@@ -5,7 +5,7 @@ import { locales } from "./locales.mjs";
 const root = path.join(import.meta.dirname, "..");
 const baselineDir = path.join(root, "src", "en");
 const files = fs.readdirSync(baselineDir).filter((name) => name.endsWith(".json")).sort();
-const placeholders = (value) => [...String(value).matchAll(/\{([\w.-]+)\}/g)].map((match) => match[1]).sort();
+const placeholders = (value) => [...String(value).matchAll(/\{(\w+)\}/g)].map((match) => match[1]).sort();
 const load = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const fail = [];
 

@@ -43,3 +43,7 @@ for (const f of fs.readdirSync(srcDir).filter((x) => x.endsWith(".json"))) {
 }
 console.log(`converted ${total} strings, ${residual} with residual simplified chars`);
 if (problems.length) console.log(problems.slice(0, 40).join("\n"));
+if (residual > 0) {
+  console.error(`✗ ${residual} string(s) with residual simplified characters`);
+  process.exitCode = 1;
+}
