@@ -4,6 +4,9 @@
     {
       "ns": "session-log-download",
       "dict": {
+        "header.more": "More actions",
+        "menu.download": "Download session log",
+        "menu.feedback": "Feedback",
         "dialog.preparingTitle": "Oturum Dışa Aktarılıyor",
         "dialog.preparingDescription": "Bu Oturumu, alt Oturumlarını ve eklerini içeren bir ZIP hazırlanıyor.",
         "dialog.successTitle": "Oturum indirmesi başladı",

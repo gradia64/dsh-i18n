@@ -20,6 +20,7 @@ const candidates = [
 const root = candidates.find((candidate) => fs.existsSync(path.join(candidate, "dsh-client-locale", "lib", "client.js")));
 if (!root) throw new Error(`No installed DSH locale packages found under: ${path.resolve(installed)}`);
 
+// DSH 0.2.0-rc.2: new packages added since the 0.1.1-rc line.
 const PKGS = [
   "dsh-client-locale",
   "dsh-client-ui-cordis",
@@ -36,16 +37,26 @@ const PKGS = [
   "dsh-client-ui-workflow-run",
   "dsh-client-ui-deliverables",
   "dsh-client-ui-sidebar",
+  "dsh-client-ui-sidebar-browser",
+  "dsh-client-ui-sidebar-documentpreview",
+  "dsh-client-ui-sidebar-files",
+  "dsh-client-ui-sidebar-right",
+  "dsh-client-ui-sidebar-terminal",
   "dsh-client-ui-settings-general",
+  "dsh-client-ui-settings-account",
+  "dsh-client-ui-settings-agent-loop",
+  "dsh-client-ui-settings-shell",
+  "dsh-client-ui-settings-web-search",
+  "dsh-client-ui-settings-session-log",
   "dsh-client-ui-theme",
   "dsh-client-ui-user-questions",
   "dsh-client-ui-trajectory",
   "dsh-client-ui-settings-plugins",
   "dsh-client-ui-settings-plugin-inventory",
-  "dsh-client-ui-workspace",
-  "dsh-client-ui-subagent",
   "dsh-client-ui-settings-models",
   "dsh-client-ui-skill",
+  "dsh-client-ui-approval",
+  "dsh-client-ui-layout",
   "dsh-session-log-export",
   "dsh-client-ui-plan",
   "dsh-client-ui-reference",

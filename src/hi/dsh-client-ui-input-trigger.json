@@ -8,6 +8,10 @@
         "skill": "स्किल",
         "subagent": "सबएजेंट",
         "loading": "लोड हो रहा है…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "ट्रिगर सुझाव"
       }
     }

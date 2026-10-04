@@ -7,7 +7,8 @@
         "session.new": "Ny session",
         "session.new.label": "Ny session",
         "toggle.open": "Öppna sidofältet",
-        "toggle.collapse": "Fäll ihop sidofältet"
+        "toggle.collapse": "Fäll ihop sidofältet",
+        "panels.label": "Global panels"
       }
     }
   ]

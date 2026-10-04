@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Enregistrer le plugin Cordis",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Exécuter le plugin Cordis",
         "row.updateTitle": "Mettre à jour le plugin Cordis",
         "row.stopTitle": "Arrêter le plugin Cordis",
@@ -42,6 +43,7 @@
         "action.remove": "Supprimer",
         "action.retry": "Réessayer",
         "action.rollback": "Revenir en arrière",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "Le rendu a échoué dans {slot} ; l'interface par défaut a été restaurée :",
         "render.failedHeld": "Le rendu a échoué dans {slot} :",
         "a11y.defining": "Définition du plugin",

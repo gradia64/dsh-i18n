@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "चालू लक्ष्य",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "रोका गया लक्ष्य",
         "phase.blocked": "अवरुद्ध लक्ष्य",
         "objective.aria": "लक्ष्य का उद्देश्य",

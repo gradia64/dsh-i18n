@@ -7,7 +7,8 @@
         "session.new": "Nowa sesja",
         "session.new.label": "Nowa sesja",
         "toggle.open": "Otwórz panel boczny",
-        "toggle.collapse": "Zwiń panel boczny"
+        "toggle.collapse": "Zwiń panel boczny",
+        "panels.label": "Global panels"
       }
     }
   ]

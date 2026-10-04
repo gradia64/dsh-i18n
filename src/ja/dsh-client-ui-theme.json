@@ -7,7 +7,12 @@
         "appearance.title": "外観",
         "appearance.light": "ライト",
         "appearance.dark": "ダーク",
-        "appearance.system": "システム"
+        "appearance.system": "システム",
+        "fontSize.title": "Font size",
+        "fontSize.description": "Only affects conversation content",
+        "fontSize.unit": "px",
+        "fontSize.increase": "Increase font size",
+        "fontSize.decrease": "Decrease font size"
       }
     }
   ]

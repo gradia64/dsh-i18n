@@ -7,7 +7,12 @@
         "appearance.title": "테마",
         "appearance.light": "밝게",
         "appearance.dark": "어둡게",
-        "appearance.system": "시스템"
+        "appearance.system": "시스템",
+        "fontSize.title": "Font size",
+        "fontSize.description": "Only affects conversation content",
+        "fontSize.unit": "px",
+        "fontSize.increase": "Increase font size",
+        "fontSize.decrease": "Decrease font size"
       }
     }
   ]

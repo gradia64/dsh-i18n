@@ -4,6 +4,9 @@
     {
       "ns": "session-log-download",
       "dict": {
+        "header.more": "More actions",
+        "menu.download": "Download session log",
+        "menu.feedback": "Feedback",
         "dialog.preparingTitle": "Session 내보내는 중",
         "dialog.preparingDescription": "이 Session과 하위 Session, 첨부 파일이 포함된 ZIP을 준비하고 있습니다.",
         "dialog.successTitle": "Session 다운로드 시작됨",

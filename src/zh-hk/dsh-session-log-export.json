@@ -4,6 +4,9 @@
     {
       "ns": "session-log-download",
       "dict": {
+        "header.more": "更多操作",
+        "menu.download": "下載 Session 日志",
+        "menu.feedback": "反饋",
         "dialog.preparingTitle": "正在匯出 Session",
         "dialog.preparingDescription": "正在準備包含目前 Session、子 Session 和附件的 ZIP 檔案。",
         "dialog.successTitle": "Session 匯出已開始下載",

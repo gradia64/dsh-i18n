@@ -8,6 +8,10 @@
         "skill": "스킬",
         "subagent": "하위 에이전트",
         "loading": "불러오는 중…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "트리거 제안"
       }
     }

@@ -4,6 +4,9 @@
     {
       "ns": "session-log-download",
       "dict": {
+        "header.more": "More actions",
+        "menu.download": "Download session log",
+        "menu.feedback": "Feedback",
         "dialog.preparingTitle": "Eksportowanie sesji",
         "dialog.preparingDescription": "Przygotowywanie archiwum ZIP zawierającego tę sesję, jej podsesje i załączniki.",
         "dialog.successTitle": "Rozpoczęto pobieranie sesji",

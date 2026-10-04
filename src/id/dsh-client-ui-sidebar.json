@@ -7,7 +7,8 @@
         "session.new": "Sesi Baru",
         "session.new.label": "Sesi baru",
         "toggle.open": "Buka bilah sisi",
-        "toggle.collapse": "Ciutkan bilah sisi"
+        "toggle.collapse": "Ciutkan bilah sisi",
+        "panels.label": "Global panels"
       }
     }
   ]

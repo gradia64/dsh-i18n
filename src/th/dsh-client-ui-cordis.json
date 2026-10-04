@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "ลงทะเบียนปลั๊กอิน Cordis",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "เรียกใช้ปลั๊กอิน Cordis",
         "row.updateTitle": "อัปเดตปลั๊กอิน Cordis",
         "row.stopTitle": "หยุดปลั๊กอิน Cordis",
@@ -42,6 +43,7 @@
         "action.remove": "ลบ",
         "action.retry": "ลองใหม่",
         "action.rollback": "ย้อนกลับ",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "การแสดงผลล้มเหลวใน {slot}; UI เริ่มต้นถูกกู้คืน:",
         "render.failedHeld": "การแสดงผลล้มเหลวใน {slot}:",
         "a11y.defining": "การกำหนดปลั๊กอิน",

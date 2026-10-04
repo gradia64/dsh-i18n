@@ -19,16 +19,20 @@
   "scripts": {
     "i18n:check": "node scripts/check.mjs",
     "i18n:build": "node scripts/assemble.mjs",
+    "i18n:extract": "node scripts/extract.mjs",
+    "i18n:migrate": "node scripts/migrate-locales.mjs",
     "verify:runtime": "node scripts/verify-runtime.mjs",
     "verify:peers": "node scripts/verify-peers.mjs",
     "test": "npm run verify:peers && npm run i18n:check && npm run i18n:build && node scripts/verify-converter.mjs && npm run verify:runtime"
   },
   "dsh": {
+    "manifestVersion": 1,
     "bundle": {
       "patch": "./cordis.patch.yml"
     },
     "client": {
       "inject": [
+        "@deepseek-ai/dsh-client-connection",
         "@deepseek-ai/dsh-client-locale"
       ],
       "platform": "web"
@@ -42,6 +46,7 @@
     }
   },
   "engines": {
+    "dsh": ">=0.1.1-rc.2 <0.3.0-0",
     "node": "^22.19.0 || >=24.0.0"
   },
   "peerDependencies": {

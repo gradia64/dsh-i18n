@@ -8,14 +8,22 @@
         "action.likeActive": "Rimuovi valutazione",
         "action.dislike": "Risposta errata",
         "action.dislikeActive": "Rimuovi valutazione",
-        "note.open": "Aggiungi una nota",
-        "note.placeholder": "Cosa è andato bene o cosa è andato storto? (facoltativo)",
-        "note.save": "Salva",
-        "note.cancel": "Annulla",
-        "note.aria": "Nota di feedback",
+        "dialog.title": "Submit feedback",
+        "dialog.categories": "Feedback category",
+        "dialog.detail": "Feedback details",
+        "dialog.hint": "Add details to help us improve. Your submission will include the current conversation log.",
+        "category.task-result": "Task result",
+        "category.instruction-following": "Instruction understanding and following",
+        "category.product-interaction": "Product features and interaction",
+        "category.service-stability": "Stability and speed",
+        "category.resource-cost": "Resource usage and cost",
+        "category.security-privacy-permission": "Security, privacy, and permissions",
+        "category.other": "Other",
+        "toast.recorded": "Thanks for your feedback",
         "error.conflict": "Questo feedback è cambiato altrove; viene mostrato lo stato più recente",
         "error.load": "Impossibile caricare il feedback",
-        "error.generic": "Impossibile salvare il feedback"
+        "error.generic": "Impossibile salvare il feedback",
+        "error.noteTooLarge": "The description is too long; shorten it and submit again"
       }
     }
   ]

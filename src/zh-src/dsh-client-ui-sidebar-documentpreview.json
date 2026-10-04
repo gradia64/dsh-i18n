@@ -1,0 +1,134 @@
+{
+  "pkg": "dsh-client-ui-sidebar-documentpreview",
+  "entries": [
+    {
+      "ns": "documentMarkdown",
+      "dict": {
+        "viewer.label": "Markdown",
+        "code.copy": "复制",
+        "code.copied": "已复制",
+        "footnotes": "脚注"
+      }
+    },
+    {
+      "ns": "documentHtml",
+      "dict": {
+        "title": "HTML",
+        "frame": "HTML 文档预览",
+        "loading": "文档渲染中...",
+        "failed": "无法预览这份 HTML 文档"
+      }
+    },
+    {
+      "ns": "sidebarImage",
+      "dict": {
+        "zoomControls": "缩放控件",
+        "zoomMenu": "选择缩放比例",
+        "zoomOut": "缩小",
+        "zoomIn": "放大",
+        "zoomFitWidth": "适应宽度",
+        "zoomValue": "{percent}%",
+        "title": "图片",
+        "preview": "图片预览：{name}",
+        "loading": "文档渲染中...",
+        "failed": "无法显示这张图片",
+        "unsupported": "图片预览需要完整文件内容"
+      }
+    },
+    {
+      "ns": "sidebarPdf",
+      "dict": {
+        "zoomControls": "缩放控件",
+        "zoomMenu": "选择缩放比例",
+        "zoomOut": "缩小",
+        "zoomIn": "放大",
+        "zoomFitWidth": "适应宽度",
+        "zoomValue": "{percent}%",
+        "title": "PDF",
+        "pageImage": "PDF 第 {page} 页",
+        "loading": "文档渲染中...",
+        "rendering": "正在绘制页面…",
+        "failed": "无法显示 PDF：{message}",
+        "password": "此 PDF 需要密码，暂不支持预览",
+        "workerFailed": "PDF 渲染进程无法继续，请重试",
+        "unsupported": "PDF 预览需要完整文件内容",
+        "retry": "重试"
+      }
+    },
+    {
+      "ns": "sidebarCodePreview",
+      "dict": {
+        "title": "代码",
+        "copy": "复制",
+        "copied": "已复制"
+      }
+    },
+    {
+      "ns": "sidebarOffice",
+      "dict": {
+        "title": "Office 文档",
+        "loading": "文档渲染中...",
+        "retry": "重试",
+        "viewMissingFonts": "缺失 {count} 种字体，点击查看",
+        "missingFontsTitle": "缺失的字体",
+        "missingFontsDescription": "本次预览无法使用以下字体，预览中的文字和排版可能与原文档不同。",
+        "missingFontsCount": "{count} 种字体",
+        "closeDetails": "关闭字体详情",
+        "unavailable": "Office 预览不可用。请在运行 DeepSeek Harness 的主机上启用文档预览服务。",
+        "invalid": "无法预览此 Office 文件。文件可能已损坏、受密码保护，或与扩展名不符。",
+        "tooLarge": "Office 文件或转换后的 PDF 超过预览大小上限，请缩小文件或调整预览配置。",
+        "failed": "Office 转换失败，未生成可用的 PDF。请检查该文件后重试。",
+        "timeout": "Office 转换超时，请重试。",
+        "busy": "Office 预览任务较多，请稍后重试。",
+        "changed": "文件在读取时已更改，请重新打开预览。"
+      }
+    },
+    {
+      "ns": "sidebarExcel",
+      "dict": {
+        "title": "表格",
+        "language": "zh",
+        "loading": "文档渲染中...",
+        "invalid": "无法打开此表格。请检查文件格式、内容或密码保护。",
+        "tooLarge": "此表格超过预览大小限制。",
+        "timeout": "打开表格超时。请缩小文件后重试。",
+        "encoding": "无法识别此文本文件的编码。请另存为 UTF-8 或带 BOM 的 UTF-16 后重试。",
+        "formulaWarning": "此工作簿包含公式，显示结果可能缺失或不准确。",
+        "unsupportedNotice": "当前预览不支持此工作簿中的{features}。请使用系统应用打开，以获得完整体验。",
+        "charts": "图表",
+        "images": "图片",
+        "shapes": "形状",
+        "conditionalFormatting": "条件格式",
+        "featureSeparator": "、",
+        "retry": "重试"
+      }
+    },
+    {
+      "ns": "sidebarDocumentPreview",
+      "dict": {
+        "loading": "文档渲染中...",
+        "loadMore": "加载更多",
+        "changed": "文件已更新，当前显示为旧内容",
+        "reloadNow": "重新载入",
+        "reload": "重新读取文件",
+        "autoRefresh": "自动刷新",
+        "autoRefresh.enable": "开启自动刷新",
+        "autoRefresh.disable": "关闭自动刷新",
+        "wrap.enable": "自动换行",
+        "wrap.disable": "取消换行",
+        "wrap.aria": "自动换行",
+        "openWith": "打开方式",
+        "viewer.text": "纯文本",
+        "resourceUnavailable": "文件资源服务不可用",
+        "rendererUnavailable": "预览器 {name} 不可用",
+        "unsupportedFile": "该格式文件暂时无法预览",
+        "error.notFound": "文件不存在，可能已被移动或删除",
+        "error.tooLarge": "单页内容超过 {limit} 上限，无法读取",
+        "error.notText": "该格式文件暂时无法预览",
+        "error.notRegularFile": "该路径不是普通文件，没有可显示的内容",
+        "error.unavailable": "读取失败：{message}",
+        "retry": "重试"
+      }
+    }
+  ]
+}

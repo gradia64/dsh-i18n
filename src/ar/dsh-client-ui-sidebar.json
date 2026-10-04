@@ -7,7 +7,8 @@
         "session.new": "جلسة جديدة",
         "session.new.label": "جلسة جديدة",
         "toggle.open": "فتح الشريط الجانبي",
-        "toggle.collapse": "طي الشريط الجانبي"
+        "toggle.collapse": "طي الشريط الجانبي",
+        "panels.label": "Global panels"
       }
     }
   ]

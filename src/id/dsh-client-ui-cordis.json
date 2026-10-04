@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Daftarkan Plugin Cordis",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Jalankan Plugin Cordis",
         "row.updateTitle": "Perbarui Plugin Cordis",
         "row.stopTitle": "Hentikan Plugin Cordis",
@@ -42,6 +43,7 @@
         "action.remove": "Hapus",
         "action.retry": "Coba lagi",
         "action.rollback": "Kembalikan",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "Rendering gagal di {slot}; antarmuka default dikembalikan:",
         "render.failedHeld": "Rendering gagal di {slot}:",
         "a11y.defining": "Mendefinisikan plugin",

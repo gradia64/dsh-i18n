@@ -7,7 +7,12 @@
         "appearance.title": "Появление",
         "appearance.light": "Свет",
         "appearance.dark": "Темный",
-        "appearance.system": "Система"
+        "appearance.system": "Система",
+        "fontSize.title": "Font size",
+        "fontSize.description": "Only affects conversation content",
+        "fontSize.unit": "px",
+        "fontSize.increase": "Increase font size",
+        "fontSize.decrease": "Decrease font size"
       }
     }
   ]

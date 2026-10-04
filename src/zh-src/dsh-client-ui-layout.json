@@ -1,0 +1,11 @@
+{
+  "pkg": "dsh-client-ui-layout",
+  "entries": [
+    {
+      "ns": "shortcuts.layout",
+      "dict": {
+        "toggle": "展开／收起左侧栏"
+      }
+    }
+  ]
+}

@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Cordis プラグインを登録",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Cordis プラグインを実行",
         "row.updateTitle": "Cordis プラグインを更新",
         "row.stopTitle": "Cordis プラグインを停止",
@@ -42,6 +43,7 @@
         "action.remove": "削除",
         "action.retry": "再試行",
         "action.rollback": "ロールバック",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "{slot} のレンダリングに失敗しました。既定の UI を復元しました:",
         "render.failedHeld": "{slot} のレンダリングに失敗しました:",
         "a11y.defining": "プラグインを定義中",

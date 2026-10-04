@@ -4,6 +4,9 @@
     {
       "ns": "session-log-download",
       "dict": {
+        "header.more": "More actions",
+        "menu.download": "Download session log",
+        "menu.feedback": "Feedback",
         "dialog.preparingTitle": "Mengekspor Sesi",
         "dialog.preparingDescription": "Menyiapkan ZIP yang berisi Sesi ini, sub-Sesinya, dan lampirannya.",
         "dialog.successTitle": "Unduhan Sesi dimulai",

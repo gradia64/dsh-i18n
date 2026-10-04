@@ -4,10 +4,13 @@
     {
       "ns": "skill",
       "dict": {
+        "row.title": "Skill",
         "row.running": "Wczytywanie umiejętności",
+        "row.preparing": "Preparing to load a skill",
         "row.failed": "Nie udało się wczytać umiejętności",
         "row.stopped": "Wczytywanie umiejętności przerwane",
         "row.instructions": "Instrukcje",
+        "row.inspect": "Inspect",
         "menu.userOnly": "tylko użytkownik"
       }
     }

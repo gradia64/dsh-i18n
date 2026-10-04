@@ -2,6 +2,80 @@
 
 # DECISIONS
 
+## 2026-09-29 — DSH 0.2.0-rc.2 compatibility
+
+**Decision:** bump the plugin to support `@deepseek-ai/dsh` 0.2.0-rc.2; add the 0.2.0-rc.2
+prerelease branch to `peerDependencies`, declare `engines.dsh`, set `manifestVersion: 1`,
+and add `@deepseek-ai/dsh-client-connection` to `dsh.client.inject`.
+
+Peer ranges become:
+```jsonc
+"@deepseek-ai/dsh-client-locale": ">=0.1.0-rc.6 <0.1.1 || >=0.1.1-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.2.1-0",
+"@deepseek-ai/dsh-llm":         ">=0.1.0-rc.2 <0.1.1 || >=0.1.1-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.2.1-0"
+```
+
+**Why:** npm `@deepseek-ai/dsh` `latest`/`next` is now `0.2.0-rc.2`. The 0.1.1-rc ranges
+exclude 0.2.0-rc.2 outright. The old `|| >=0.1.1-rc.1 <0.2.0-0` branch is retained so
+installs that haven't upgraded yet are not blocked. `engines.dsh` declares the compatible
+DSH version range; `manifestVersion: 1` aligns with the `dsh-package-manifest` format
+checked by the 0.2.0-rc.2 plugin manager. `@deepseek-ai/dsh-client-connection` is added
+to `inject` so the client bundle's `connection.rpc.call` (auto-translate) materializes
+after the connection service is ready.
+
+**Host entry (`index.mjs`) fixes:**
+- `createUserMessage` source changed from `{ kind: "plugin", plugin: "dsh-i18n" }` to
+  `{ kind: "user" }`. In 0.2.0-rc.2 `MessageSourceMap` no longer defines a `plugin` kind
+  for user messages; only `{ kind: "user" }` is valid.
+- `purpose: "dsh-i18n-translate"` removed from `GenerateOptions`. In 0.2.0-rc.2,
+  `purpose` is restricted to `'compaction' | 'session-title'`. The DeepSeek adapter
+  uses `purpose` to decide reasoning-effort defaults (`session-title` → `"off"`);
+  for translation we now explicitly default `reasoningEffort` to `"off"` when the
+  caller did not pin one, since translation is a one-shot task that does not benefit
+  from chain-of-thought reasoning.
+- `BlockAssembler`, `createUserMessage`, and `ctx.llm.stream` are still exported and
+  work unchanged in `dsh-llm@0.2.0-rc.2`.
+
+**Extractor / locale source updates:**
+- `scripts/extract.mjs` `PKGS` list grew from 28 to 40 upstream packages (12 new:
+  `dsh-client-ui-approval`, `dsh-client-ui-layout`, `dsh-client-ui-settings-account`,
+  `dsh-client-ui-settings-agent-loop`, `dsh-client-ui-settings-session-log`,
+  `dsh-client-ui-settings-shell`, `dsh-client-ui-settings-web-search`,
+  `dsh-client-ui-sidebar-browser`, `dsh-client-ui-sidebar-documentpreview`,
+  `dsh-client-ui-sidebar-files`, `dsh-client-ui-sidebar-right`,
+  `dsh-client-ui-sidebar-terminal`).
+  `dsh-client-ui-directory-picker-native` and `dsh-client-ui-tool` were found to have
+  no `locale.register` calls and were deliberately excluded.
+- `src/zh-src/` and `src/en/` re-extracted from DSH 0.2.0-rc.2 client bundles
+  (1665 keys total, up from 715).
+- `scripts/migrate-locales.mjs` added to merge new keys into existing locale files
+  (English placeholders for untranslated keys) and create new package files for all
+  20 locales.
+- `scripts/check.mjs` keeps English residue and simplified residue as hard failures.
+  The only exception is an explicit list, `scripts/pending-translation.json`
+  (`<locale>/<file>/<ns>.<key>`), generated with `--record-pending`: listed keys are
+  warnings, and a listed key that is no longer untranslated fails, so the list can only
+  shrink. The script sets `process.exitCode` instead of calling `process.exit()`, which
+  could truncate piped output and hide the failure messages behind thousands of warnings.
+- `scripts/fill-traditional.mjs` fills zh-HK/zh-TW keys that `migrate-locales.mjs` left
+  as English with the zh-src value converted through `src/zh-tw-parts/chars.json`, the
+  same result the runtime Simplified→Traditional fallback produces. Without it the
+  English placeholder would bypass that fallback (1092 keys per locale). Character-level
+  conversion keeps mainland vocabulary (e.g. 設置 rather than 設定); proper zh-HK/zh-TW
+  wording is left for a follow-up.
+
+**DOM skip selector update:**
+- `[data-agent-teams-panel-open]` and `[data-agent-teams-collapsed]` (removed in
+  0.2.0-rc.2) replaced by `[data-team-panel]` and `[data-team-action]` (from
+  `@deepseek-ai/dsh-experimental-client-ui-agent-team@0.2.0-rc.2`).
+
+**Not chosen:** machine-translating the new keys via the plugin's own
+`/api/dsh-i18n.translate` endpoint as part of this change. Keeping translation
+out of the compatibility work makes the diff reviewable and lets the 12 new
+packages be translated (and checked by native speakers) in a separate step.
+Until then the runtime falls back to English (or Simplified-to-Traditional
+conversion for zh-HK/zh-TW) for untranslated keys, preserving full UI
+functionality.
+
 ## 2026-09-09 — Do not convert streaming conversation text
 
 **Decision:** zh-TW DOM conversion and auto-MT observers ignore `characterData`, skip conversation / composer / AgentTeams live surfaces (`[data-conversation-scroll]`, `[data-composer-input]`, `[data-composer-card]`, `[data-composer-seat]`, `[data-team-id]`, `[data-agent-teams-panel-open]`, `[data-agent-teams-collapsed]`), coalesce leftover `childList` work onto `requestAnimationFrame`, and never re-walk those trees after an MT RPC. Chrome and settings still convert via `childList`.

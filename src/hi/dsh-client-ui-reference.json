@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "फ़ाइलें और फ़ोल्डर",
+        "section.subagents": "Subagents",
         "section.sessions": "सत्र की बातचीत",
-        "candidate.file": "फ़ाइल",
-        "candidate.folder": "फ़ोल्डर",
-        "candidate.session": "सत्र",
-        "candidate.noCwd": "(कोई cwd नहीं)"
+        "candidate.noCwd": "(कोई cwd नहीं)",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

@@ -7,7 +7,8 @@
         "session.new": "新會話",
         "session.new.label": "新增會話",
         "toggle.open": "開啟側邊欄",
-        "toggle.collapse": "收起側邊欄"
+        "toggle.collapse": "收起側邊欄",
+        "panels.label": "全局面板"
       }
     }
   ]

@@ -7,7 +7,12 @@
         "appearance.title": "Görünüm",
         "appearance.light": "Açık",
         "appearance.dark": "Koyu",
-        "appearance.system": "Sistem"
+        "appearance.system": "Sistem",
+        "fontSize.title": "Font size",
+        "fontSize.description": "Only affects conversation content",
+        "fontSize.unit": "px",
+        "fontSize.increase": "Increase font size",
+        "fontSize.decrease": "Decrease font size"
       }
     }
   ]

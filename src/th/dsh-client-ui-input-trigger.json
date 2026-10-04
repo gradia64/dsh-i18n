@@ -8,6 +8,10 @@
         "skill": "ทักษะ",
         "subagent": "ตัวแทนย่อย",
         "loading": "กำลังโหลด…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "ทริกเกอร์คำแนะนำ"
       }
     }

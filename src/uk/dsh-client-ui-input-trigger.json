@@ -8,6 +8,10 @@
         "skill": "Навички",
         "subagent": "Субагенти",
         "loading": "Завантаження…",
+        "drill.aria": "Browse folder",
+        "drill.hint": "Browse folder",
+        "drill.key": "Tab",
+        "crumbs.aria": "Folder navigation",
         "suggestions.aria": "Пропозиції тригерів"
       }
     }

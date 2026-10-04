@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "Meta em andamento",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "Meta pausada",
         "phase.blocked": "Meta bloqueada",
         "objective.aria": "Objetivo da meta",

@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "Pliki i foldery",
+        "section.subagents": "Subagents",
         "section.sessions": "Rozmowy w sesjach",
-        "candidate.file": "Plik",
-        "candidate.folder": "Folder",
-        "candidate.session": "Sesja",
-        "candidate.noCwd": "(brak katalogu roboczego)"
+        "candidate.noCwd": "(brak katalogu roboczego)",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

@@ -7,7 +7,12 @@
         "appearance.title": "Apparence",
         "appearance.light": "Clair",
         "appearance.dark": "Sombre",
-        "appearance.system": "Système"
+        "appearance.system": "Système",
+        "fontSize.title": "Font size",
+        "fontSize.description": "Only affects conversation content",
+        "fontSize.unit": "px",
+        "fontSize.increase": "Increase font size",
+        "fontSize.decrease": "Decrease font size"
       }
     }
   ]

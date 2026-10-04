@@ -5,6 +5,7 @@
       "ns": "goal",
       "dict": {
         "phase.active": "Mục tiêu đang chạy",
+        "phase.active.disarmed": "Inactive Goal",
         "phase.paused": "Mục tiêu đã tạm dừng",
         "phase.blocked": "Mục tiêu bị chặn",
         "objective.aria": "Nội dung mục tiêu",

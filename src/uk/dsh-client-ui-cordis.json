@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Зареєструвати плагін Cordis",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Запустити плагін Cordis",
         "row.updateTitle": "Оновити плагін Cordis",
         "row.stopTitle": "Зупинити плагін Cordis",
@@ -42,6 +43,7 @@
         "action.remove": "Вилучити",
         "action.retry": "Повторити",
         "action.rollback": "Відкотити",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "Помилка рендерингу в {slot}; типовий інтерфейс відновлено:",
         "render.failedHeld": "Помилка рендерингу в {slot}:",
         "a11y.defining": "Визначення плагіна",

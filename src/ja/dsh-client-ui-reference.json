@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "ファイルとフォルダー",
+        "section.subagents": "Subagents",
         "section.sessions": "Session の会話",
-        "candidate.file": "ファイル",
-        "candidate.folder": "フォルダー",
-        "candidate.session": "Session",
-        "candidate.noCwd": "（作業ディレクトリなし）"
+        "candidate.noCwd": "（作業ディレクトリなし）",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

@@ -8,6 +8,7 @@ const files = fs.readdirSync(baselineDir).filter((name) => name.endsWith(".json"
 const placeholders = (value) => [...String(value).matchAll(/\{(\w+)\}/g)].map((match) => match[1]).sort();
 const load = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const fail = [];
+const warn = [];
 
 // --- 英文殘留閘 ---
 // 值同 src/en 逐字節相同，唔一定係缺譯：純佔位符字串、專有名詞、技術識別碼本來就要照留。
@@ -26,6 +27,20 @@ const englishWordCount = (value) => String(value)
 // 注意：英文殘留閘只對「同 src/en 逐字節相同」嘅值生效。重寫過嘅英文散文（改咗
 // 一兩個字）冇得可靠咁同其他拉丁系語言區分（法文/德文/西文詞一樣係拉丁字母），
 // 所以唔強行偵測——呢個係已知限制，靠翻譯者自己唔好漏譯。
+
+// --- Pending translations (DSH 0.2.0-rc.2 transition) ---
+// Keys added by the 0.2.0-rc.2 re-extraction start as English placeholders.
+// English residue stays a hard failure, except for the keys explicitly listed in
+// scripts/pending-translation.json ("<locale>/<file>/<ns>.<key>"), which are
+// reported as warnings. Translate a key, remove it from the list; once the list
+// is empty, delete the file. Listed keys that are no longer untranslated fail,
+// so the list cannot silently go stale.
+//   node scripts/check.mjs --record-pending   # regenerate the list from the current state
+const PENDING_FILE = path.join(root, "scripts", "pending-translation.json");
+const PENDING = new Set(fs.existsSync(PENDING_FILE) ? load(PENDING_FILE) : []);
+const RECORD = process.argv.includes("--record-pending");
+const pendingSeen = new Set();
+const newPending = [];
 
 // --- 簡體殘留閘 ---
 // 只查 traditional locale。chars.json 嘅 key 全部係簡體專用字（0 個 identity mapping），
@@ -56,11 +71,15 @@ for (const locale of locales) {
       if (!target) { fail.push(`${locale.id}/${file}: missing namespace ${ns}`); continue; }
       for (const key of Object.keys(target)) if (!(key in dict)) fail.push(`${locale.id}/${file} [${ns}]: stale key ${key}`);
       for (const [key, value] of Object.entries(dict)) {
-        if (!(key in target)) { fail.push(`${locale.id}/${file} [${ns}]: missing key ${key}`); continue; }
+        if (!(key in target)) { fail.push(`${locale.id}/${file} [${ns}.${key}]: missing key`); continue; }
         if (typeof target[key] !== "string" || target[key].trim() === "") fail.push(`${locale.id}/${file} [${ns}.${key}]: empty value`);
         if (placeholders(target[key]).join("|") !== placeholders(value).join("|")) fail.push(`${locale.id}/${file} [${ns}.${key}]: placeholder mismatch`);
         if (target[key] === value && englishWordCount(value) >= ENGLISH_WORD_THRESHOLD) {
-          fail.push(`${locale.id}/${file} [${ns}.${key}]: untranslated English (${englishWordCount(value)} words)`);
+          const id = `${locale.id}/${file}/${ns}.${key}`;
+          const msg = `${locale.id}/${file} [${ns}.${key}]: untranslated English (${englishWordCount(value)} words)`;
+          if (RECORD) newPending.push(id);
+          else if (PENDING.has(id)) { pendingSeen.add(id); warn.push(`${msg} (pending translation)`); }
+          else fail.push(msg);
         }
         if (locale.traditional) {
           const residue = simplifiedResidue(target[key]);
@@ -71,9 +90,30 @@ for (const locale of locales) {
   }
 }
 
-if (fail.length) {
-  console.error(fail.map((message) => `✗ ${message}`).join("\n"));
-  console.error(`i18n check failed: ${fail.length} issue(s)`);
-  process.exit(1);
+if (RECORD) {
+  if (fail.length) {
+    console.error(fail.map((message) => `✗ ${message}`).join("\n"));
+    console.error(`i18n check failed: ${fail.length} issue(s); pending list not written`);
+    process.exitCode = 1;
+  } else {
+    fs.writeFileSync(PENDING_FILE, JSON.stringify(newPending.sort(), null, 2) + "\n");
+    console.log(`recorded ${newPending.length} pending key(s) in ${path.relative(root, PENDING_FILE)}`);
+  }
+} else {
+  for (const id of PENDING) {
+    if (!pendingSeen.has(id)) fail.push(`${id}: listed in pending-translation.json but no longer untranslated; remove it from the list`);
+  }
+  // Warnings first, failures last, so failures stay visible at the end of the output.
+  // No process.exit(): with piped output it can truncate pending writes.
+  if (warn.length) {
+    console.warn(warn.map((message) => `⚠ ${message}`).join("\n"));
+    console.warn(`i18n check: ${warn.length} warning(s) — keys listed in scripts/pending-translation.json`);
+  }
+  if (fail.length) {
+    console.error(fail.map((message) => `✗ ${message}`).join("\n"));
+    console.error(`i18n check failed: ${fail.length} issue(s)`);
+    process.exitCode = 1;
+  } else {
+    console.log(`i18n check passed: ${locales.length} locales × ${files.length} files` + (warn.length ? ` (${warn.length} pending translation)` : ""));
+  }
 }
-console.log(`i18n check passed: ${locales.length} locales × ${files.length} files`);

@@ -5,11 +5,16 @@
       "ns": "reference",
       "dict": {
         "section.files": "الملفات والمجلدات",
+        "section.subagents": "Subagents",
         "section.sessions": "محادثات الجلسة",
-        "candidate.file": "ملف",
-        "candidate.folder": "مجلد",
-        "candidate.session": "جلسة",
-        "candidate.noCwd": "(لا يوجد دليل عمل)"
+        "candidate.noCwd": "(لا يوجد دليل عمل)",
+        "crumb.root": "Workspace",
+        "time.now": "now",
+        "time.minutes": "{n}min",
+        "time.hours": "{n}h",
+        "time.days": "{n}d",
+        "time.months": "{n}mo",
+        "time.years": "{n}y"
       }
     }
   ]

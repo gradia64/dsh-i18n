@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Register Cordis إضافة",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Run Cordis إضافة",
         "row.updateTitle": "Update Cordis إضافة",
         "row.stopTitle": "Stop Cordis إضافة",
@@ -42,6 +43,7 @@
         "action.remove": "إزالة",
         "action.retry": "إعادة المحاولة",
         "action.rollback": "تراجع",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "‏Rendering failed in {slot}; the default UI was restored:",
         "render.failedHeld": "‏Rendering failed in {slot}:",
         "a11y.defining": "‏Defining the plugin",

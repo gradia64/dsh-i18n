@@ -5,6 +5,7 @@
       "ns": "cordis",
       "dict": {
         "row.defineTitle": "Registrera Cordis-plugin",
+        "a11y.preparing": "Preparing a Cordis tool call",
         "row.runTitle": "Kör Cordis-plugin",
         "row.updateTitle": "Uppdatera Cordis-plugin",
         "row.stopTitle": "Stoppa Cordis-plugin",
@@ -42,6 +43,7 @@
         "action.remove": "Ta bort",
         "action.retry": "Försök igen",
         "action.rollback": "Återställ",
+        "action.inspect": "Inspect",
         "render.failedAbdicated": "Renderingen misslyckades i {slot}; standardgränssnittet återställdes:",
         "render.failedHeld": "Renderingen misslyckades i {slot}:",
         "a11y.defining": "Definierar pluginen",

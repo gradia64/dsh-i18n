@@ -4,6 +4,9 @@
     {
       "ns": "session-log-download",
       "dict": {
+        "header.more": "More actions",
+        "menu.download": "Download session log",
+        "menu.feedback": "Feedback",
         "dialog.preparingTitle": "Đang xuất phiên",
         "dialog.preparingDescription": "Đang chuẩn bị tệp ZIP chứa phiên này, các phiên con và tệp đính kèm.",
         "dialog.successTitle": "Đã bắt đầu tải phiên xuống",

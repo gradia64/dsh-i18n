@@ -4,10 +4,13 @@
     {
       "ns": "skill",
       "dict": {
+        "row.title": "Skill",
         "row.running": "Завантаження навички",
+        "row.preparing": "Preparing to load a skill",
         "row.failed": "Не вдалося завантажити навичку",
         "row.stopped": "Завантаження навички зупинено",
         "row.instructions": "Інструкції",
+        "row.inspect": "Inspect",
         "menu.userOnly": "лише для користувача"
       }
     }
