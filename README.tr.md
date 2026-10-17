@@ -23,10 +23,10 @@ DeepSeek Harness Web UI için sürdürülebilir bir uluslararasılaştırma ekle
 
 ## Kurulum
 
-Ana makinenizin gerçekte önyüklediği profile kurun ve commit'i sabitleyin:
+Ana makinenizin gerçekte önyüklediği profile `gradia-local` dalından kurun (ya da `#<commit>` ile bir commit'i sabitleyin):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 DSH Desktop için etkin profil, `%APPDATA%/DSH Desktop/profile-selection/state.json` içindeki `active` değeridir (genellikle `desktop`). Profil başına shim `host-commands/<profile>/bin/dsh.cmd`, komuta kendi profil adını işler; bu yüzden `web` shim'i, Desktop `desktop` gösteriyor olsa bile `web` profiline kurulur — kurulum başarılı olur ancak eklenti asla yüklenmez. Emin olmak için `--profile` öğesini açıkça belirtin.
@@ -51,7 +51,7 @@ node scripts/extract.mjs <installed-dsh-path>
 
 ## Yayımlama
 
-npm paketi; çalışma zamanı girdilerini, oluşturulan istemciyi, yerel ayar verilerini ve yerel ayar kayıt defterini içerir. Kaynak depo: https://github.com/mimateinn/dsh-i18n
+npm paketi; çalışma zamanı girdilerini, oluşturulan istemciyi, yerel ayar verilerini ve yerel ayar kayıt defterini içerir. Kaynak depo: https://github.com/gradia64/dsh-i18n
 
 ## Güvenlik ve gizlilik
 

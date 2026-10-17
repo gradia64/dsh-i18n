@@ -23,10 +23,10 @@
 
 ## Встановлення
 
-Встановлюйте у профіль, який ваш хост насправді завантажує, і закріплюйте коміт:
+Встановлюйте у профіль, який ваш хост насправді завантажує, з гілки `gradia-local` (або закріпіть коміт через `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 Для DSH Desktop активним профілем є значення `active` у
@@ -57,7 +57,7 @@ node scripts/extract.mjs <installed-dsh-path>
 
 ## Публікація
 
-Пакет npm містить записи часу виконання, згенерований клієнт, дані локалей і реєстр локалей. Вихідний репозиторій: https://github.com/mimateinn/dsh-i18n
+Пакет npm містить записи часу виконання, згенерований клієнт, дані локалей і реєстр локалей. Вихідний репозиторій: https://github.com/gradia64/dsh-i18n
 
 ## Безпека та конфіденційність
 

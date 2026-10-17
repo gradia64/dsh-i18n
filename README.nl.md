@@ -23,10 +23,10 @@ Een duurzame internationalisatie-plugin voor de DeepSeek Harness Web UI. Versie 
 
 ## Installeren
 
-Installeer in het profiel dat je host daadwerkelijk opstart, en pin de commit:
+Installeer in het profiel dat je host daadwerkelijk opstart, vanaf de branch `gradia-local` (of pin een commit met `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 Voor DSH Desktop is het actieve profiel de `active`-waarde in `%APPDATA%/DSH Desktop/profile-selection/state.json` (meestal `desktop`). De per-profiel-shim `host-commands/<profile>/bin/dsh.cmd` bakt zijn eigen profielnaam in de opdracht, dus het uitvoeren van de `web`-shim installeert in het `web`-profiel, zelfs terwijl Desktop `desktop` toont — de installatie slaagt en de plugin wordt nooit geladen. Geef `--profile` expliciet op om zeker te zijn.
@@ -51,7 +51,7 @@ Extractie accepteert een geïnstalleerde DSH-root, zijn `@deepseek-ai`-pakketmap
 
 ## Publiceren
 
-Het npm-pakket bevat runtime-entries, de gegenereerde client, locale-data en de locale-registry. Bronrepository: https://github.com/mimateinn/dsh-i18n
+Het npm-pakket bevat runtime-entries, de gegenereerde client, locale-data en de locale-registry. Bronrepository: https://github.com/gradia64/dsh-i18n
 
 ## Beveiliging en privacy
 

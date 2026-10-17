@@ -23,10 +23,10 @@
 
 ## Установка
 
-Установите в профиль, который реально загружает ваш хост, и закрепите коммит:
+Установите в профиль, который реально загружает ваш хост, из ветки `gradia-local` (или закрепите коммит через `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 Для DSH Desktop активным профилем является значение `active` в `%APPDATA%/DSH Desktop/profile-selection/state.json` (обычно `desktop`). Шим для каждого профиля `host-commands/<profile>/bin/dsh.cmd` вшивает собственное имя профиля в команду, поэтому запуск шима `web` устанавливает плагин в профиль `web`, даже когда Desktop показывает `desktop` — установка проходит успешно, но плагин никогда не загружается. Явно передавайте `--profile`, чтобы быть уверенным.
@@ -51,7 +51,7 @@ node scripts/extract.mjs <installed-dsh-path>
 
 ## Публикация
 
-Пакет npm включает рантайм-компоненты, сгенерированный клиент, данные локалей и реестр локалей. Репозиторий исходников: https://github.com/mimateinn/dsh-i18n
+Пакет npm включает рантайм-компоненты, сгенерированный клиент, данные локалей и реестр локалей. Репозиторий исходников: https://github.com/gradia64/dsh-i18n
 
 ## Безопасность и конфиденциальность
 

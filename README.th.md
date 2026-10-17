@@ -23,10 +23,10 @@
 
 ## การติดตั้ง
 
-ติดตั้งลงในโปรไฟล์ที่โฮสต์ของคุณบูตใช้งานจริง และปักหมุด commit:
+ติดตั้งลงในโปรไฟล์ที่โฮสต์ของคุณบูตใช้งานจริง จากสาขา `gradia-local` (หรือปักหมุด commit ด้วย `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 สำหรับ DSH Desktop โปรไฟล์ที่ใช้งานอยู่คือค่า `active` ใน `%APPDATA%/DSH Desktop/profile-selection/state.json` (โดยปกติคือ `desktop`) ตัว shim รายโปรไฟล์ `host-commands/<profile>/bin/dsh.cmd` ฝังชื่อโปรไฟล์ของตัวเองลงในคำสั่ง ดังนั้นการรัน shim ของ `web` จะติดตั้งลงในโปรไฟล์ `web` แม้ในขณะที่ Desktop แสดงเป็น `desktop` — การติดตั้งจะสำเร็จแต่ปลั๊กอินจะไม่มีวันถูกโหลด ระบุ `--profile` อย่างชัดเจนเพื่อความแน่ใจ
@@ -51,7 +51,7 @@ node scripts/extract.mjs <installed-dsh-path>
 
 ## การเผยแพร่
 
-แพ็กเกจ npm ประกอบด้วยรายการรันไทม์ ไคลเอนต์ที่สร้างขึ้น ข้อมูลโลแคล และรีจิสทรีโลแคล ที่เก็บซอร์สโค้ด: https://github.com/mimateinn/dsh-i18n
+แพ็กเกจ npm ประกอบด้วยรายการรันไทม์ ไคลเอนต์ที่สร้างขึ้น ข้อมูลโลแคล และรีจิสทรีโลแคล ที่เก็บซอร์สโค้ด: https://github.com/gradia64/dsh-i18n
 
 ## ความปลอดภัยและความเป็นส่วนตัว
 

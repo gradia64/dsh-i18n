@@ -23,17 +23,13 @@ A sustainable internationalization plugin for the DeepSeek Harness Web UI. Versi
 
 ## Install
 
-Install from npm (exact version — this is what DSH Desktop's Market update button needs):
+Install from GitHub, from the `gradia-local` branch (or pin a commit with `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add @mimateinn/dsh-i18n@0.2.8
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
-Or from GitHub, pinned to a commit:
-
-```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
-```
+This fork is not published on npm: the `@mimateinn/dsh-i18n` npm package is the upstream build and does not contain this branch's changes.
 
 For DSH Desktop the active profile is the `active` value in
 `%APPDATA%/DSH Desktop/profile-selection/state.json` (usually `desktop`). The per-profile shim
@@ -43,16 +39,17 @@ succeeds and the plugin is never loaded. Pass `--profile` explicitly to be sure.
 
 DSH Desktop's Market install paths accept only an exact published npm version, so a GitHub spec must
 go through the built-in terminal `dsh plugin add`, which forwards the specifier to pnpm unvalidated.
+Run the same command again to update to the latest `gradia-local`; pnpm pins the commit it resolved at install time.
 
 Restart the host, then choose a language in **Settings → General → Language**. Remove with
 `dsh plugin --profile <active-profile> remove dsh-i18n`.
 
 ## Compatibility
 
-- DeepSeek Harness **0.1.0-rc.6 or newer**, including the current published line **0.2.0-rc.2** (`@deepseek-ai/dsh` npm `latest` / `next`).
-- Node.js **`^22.19.0 || >=24.0.0`** (official harness `engines.node` at [dsh-v0.2.0-rc.2](https://github.com/deepseek-ai/deepseek-harness/blob/dsh-v0.2.0-rc.2/package.json)).
-- Host packages are `peerDependencies` with explicit `0.1.1-rc.*` and `0.2.0-rc.*` branches so node-semver does not silently exclude harness prereleases ([awesome-dsh-plugin contributing](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md)).
-- `engines.dsh` declares the compatible DSH version range; `manifestVersion: 1` aligns with the `dsh-package-manifest` format used by the 0.2.0-rc.2 plugin manager.
+- DeepSeek Harness **0.1.1-rc.2 or newer**, up to and including **0.2.1-rc.2** (`engines.dsh`: `>=0.1.1-rc.2 <0.3.0-0`).
+- Node.js **`^22.19.0 || >=24.0.0`** (official harness `engines.node`).
+- DSH checks `engines.dsh` with prereleases included; host packages are also `peerDependencies` with explicit `0.1.1-rc.*`, `0.2.0-rc.*` and `0.2.1-rc.*` branches so node-semver (pnpm) does not silently exclude harness prereleases ([awesome-dsh-plugin contributing](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md)).
+- `manifestVersion: 1` aligns with the `dsh-package-manifest` format used by the 0.2.x plugin manager.
 
 ## Maintenance pipeline
 
@@ -73,7 +70,7 @@ Extraction accepts an installed DSH root, its `@deepseek-ai` package directory, 
 
 ## Publishing
 
-The npm package includes runtime entries, the generated client, locale data, and the locale registry. Source repository: https://github.com/mimateinn/dsh-i18n
+The npm package includes runtime entries, the generated client, locale data, and the locale registry. Source repository: https://github.com/gradia64/dsh-i18n (branch `gradia-local`), forked from https://github.com/mimateinn/dsh-i18n.
 
 ## Security and privacy
 

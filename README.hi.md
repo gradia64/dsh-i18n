@@ -23,10 +23,10 @@ DeepSeek Harness Web UI के लिए एक टिकाऊ अंतर्�
 
 ## इंस्टॉलेशन
 
-उस प्रोफ़ाइल में इंस्टॉल करें जिसे आपका होस्ट वास्तव में बूट करता है, और commit को पिन करें:
+उस प्रोफ़ाइल में इंस्टॉल करें जिसे आपका होस्ट वास्तव में बूट करता है, `gradia-local` ब्रांच से (या `#<commit>` से कोई commit पिन करें):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 DSH Desktop के लिए सक्रिय प्रोफ़ाइल `%APPDATA%/DSH Desktop/profile-selection/state.json` में `active` मान है (आमतौर पर `desktop`)। प्रति-प्रोफ़ाइल शिम `host-commands/<profile>/bin/dsh.cmd` अपना स्वयं का प्रोफ़ाइल नाम कमांड में समाहित कर लेता है, इसलिए `web` शिम चलाने पर प्लगइन `web` प्रोफ़ाइल में इंस्टॉल होता है, भले ही Desktop `desktop` दिखा रहा हो — इंस्टॉल सफल हो जाता है लेकिन प्लगइन कभी लोड नहीं होता। सुनिश्चित होने के लिए स्पष्ट रूप से `--profile` पास करें।
@@ -51,7 +51,7 @@ Extraction एक इंस्टॉल किया हुआ DSH root, उस�
 
 ## प्रकाशन
 
-npm पैकेज में रनटाइम एंट्री, उत्पन्न क्लाइंट, locale डेटा और locale रजिस्ट्री शामिल हैं। स्रोत रिपॉज़िटरी: https://github.com/mimateinn/dsh-i18n
+npm पैकेज में रनटाइम एंट्री, उत्पन्न क्लाइंट, locale डेटा और locale रजिस्ट्री शामिल हैं। स्रोत रिपॉज़िटरी: https://github.com/gradia64/dsh-i18n
 
 ## सुरक्षा और गोपनीयता
 

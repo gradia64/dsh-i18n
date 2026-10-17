@@ -23,10 +23,10 @@ Un plugin de internacionalización sostenible para la interfaz web de DeepSeek H
 
 ## Instalación
 
-Instálalo en el perfil que realmente arranca tu host y fija el commit:
+Instálalo en el perfil que realmente arranca tu host, desde la rama `gradia-local` (o fija un commit con `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 En DSH Desktop, el perfil activo es el valor `active` de `%APPDATA%/DSH Desktop/profile-selection/state.json` (normalmente `desktop`). El shim por perfil `host-commands/<profile>/bin/dsh.cmd` incorpora su propio nombre de perfil al comando, de modo que ejecutar el shim `web` instala en el perfil `web` incluso cuando Desktop muestra `desktop`: la instalación se completa pero el plugin nunca se carga. Pasa `--profile` explícitamente para asegurarte.
@@ -51,7 +51,7 @@ La extracción acepta una raíz de DSH instalada, su directorio de paquete `@dee
 
 ## Publicación
 
-El paquete npm incluye los puntos de entrada en tiempo de ejecución, el cliente generado, los datos de locales y el registro de locales. Repositorio de código: https://github.com/mimateinn/dsh-i18n
+El paquete npm incluye los puntos de entrada en tiempo de ejecución, el cliente generado, los datos de locales y el registro de locales. Repositorio de código: https://github.com/gradia64/dsh-i18n
 
 ## Seguridad y privacidad
 

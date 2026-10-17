@@ -80,11 +80,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mimateinn/dsh-i18n.git"
+    "url": "git+https://github.com/gradia64/dsh-i18n.git"
   },
-  "homepage": "https://github.com/mimateinn/dsh-i18n#readme",
+  "homepage": "https://github.com/gradia64/dsh-i18n/tree/gradia-local#readme",
   "bugs": {
-    "url": "https://github.com/mimateinn/dsh-i18n/issues"
+    "url": "https://github.com/gradia64/dsh-i18n/issues"
   },
   "publishConfig": {
     "access": "public"
