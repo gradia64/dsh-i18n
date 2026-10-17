@@ -39,7 +39,7 @@ dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 проводити через вбудований термінал `dsh plugin add`, який передає специфікатор у pnpm без перевірки.
 
 Перезапустіть хост, потім оберіть мову в **Settings → General → Language**. Видалення виконується командою
-`dsh plugin --profile <active-profile> remove dsh-i18n`.
+`dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Конвеєр обслуговування
 

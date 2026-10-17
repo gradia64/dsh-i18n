@@ -33,7 +33,7 @@ dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 
 Пути установки Market в DSH Desktop принимают только точную опубликованную версию npm, поэтому спецификацию GitHub нужно проводить через встроенный терминал `dsh plugin add`, который передаёт спецификатор в pnpm без валидации.
 
-Перезапустите хост, затем выберите язык в **Settings → General → Language**. Удаление выполняется командой `dsh plugin --profile <active-profile> remove dsh-i18n`.
+Перезапустите хост, затем выберите язык в **Settings → General → Language**. Удаление выполняется командой `dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Пайплайн сопровождения
 

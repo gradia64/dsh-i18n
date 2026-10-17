@@ -39,7 +39,7 @@ Jalur instalasi Market DSH Desktop hanya menerima versi npm yang telah dipublika
 melalui terminal bawaan `dsh plugin add`, yang meneruskan specifier tersebut ke pnpm tanpa validasi.
 
 Mulai ulang host, lalu pilih bahasa di **Settings → General → Language**. Hapus dengan
-`dsh plugin --profile <active-profile> remove dsh-i18n`.
+`dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Pipeline pemeliharaan
 

@@ -33,7 +33,7 @@ DSH Desktop에서 활성 프로필은 `%APPDATA%/DSH Desktop/profile-selection/s
 
 DSH Desktop의 Market 설치 경로는 정확히 게시된 npm 버전만 허용하므로, GitHub 스펙은 내장 터미널의 `dsh plugin add`를 통해야 합니다. 이 명령은 스펙을 검증 없이 pnpm에 그대로 전달합니다.
 
-호스트를 재시작한 다음 **Settings → General → Language**에서 언어를 선택하세요. 제거는 `dsh plugin --profile <active-profile> remove dsh-i18n`으로 합니다.
+호스트를 재시작한 다음 **Settings → General → Language**에서 언어를 선택하세요. 제거는 `dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`으로 합니다.
 
 ## 유지보수 파이프라인
 

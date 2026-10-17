@@ -39,7 +39,7 @@ DSH Desktops Market-installationsvägar accepterar bara en exakt publicerad npm-
 gå via den inbyggda terminalen `dsh plugin add`, som vidarebefordrar specifikationen till pnpm utan validering.
 
 Starta om värden och välj sedan ett språk i **Settings → General → Language**. Ta bort med
-`dsh plugin --profile <active-profile> remove dsh-i18n`.
+`dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Underhållspipeline
 
