@@ -33,6 +33,7 @@
         "terminal.signal": "signal {signal}",
         "terminal.exitCode": "exit {code}",
         "terminal.noExitCode": "no exit code",
+        "terminal.commandLine": "Command line {n}",
         "terminal.running": "running",
         "terminal.failed": "failed",
         "terminal.done": "done",
