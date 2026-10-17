@@ -3,6 +3,11 @@
 # HANDOFF
 
 ## In progress
+- 2026-10-17: **Harness 0.2.1-rc.2** → `0.2.8-gradia.3` (branch `gradia-local`).
+  - Loader: `dsh-app-boot` checks `engines.dsh` with `includePrerelease: true` and ignores peers when `engines.dsh` exists, so `>=0.1.1-rc.2 <0.3.0-0` already admits 0.2.1-rc.2. Peers only drive pnpm warnings; they still excluded `0.2.1-rc.*` (node-semver prerelease trap) → added `|| >=0.2.1-rc.1 <0.3.0-0` to dsh-client-locale / dsh-llm.
+  - APIs unchanged in 0.2.1-rc.2: `BlockAssembler`, `createUserMessage`, `ctx.llm.stream`, `connection.fetch.register`, `connection.rpc.call`, dsh-client-locale `lib/`. Cordis `~4.0.5` fits `^4.0.1`. No 0.2.1-rc.2 adapter reads `purpose` or `source.kind`, so `index.mjs` still passing `kind: "plugin"` / `purpose: "dsh-i18n-translate"` is harmless (the 2026-09-29 note below says they were removed; they were not).
+  - Re-extracted `src/en` + `src/zh-src` from 0.2.1-rc.2 (same 40 PKGS): +77 keys, -11 removed, 8 English source strings changed (1665 → 1731). `migrate-locales` + reset of changed-source values to English placeholder + `fill-traditional` + `check --record-pending` (8588 pending). `verify-runtime` key count 1731. `npm test` EXIT=0. Not GUI-verified on Desktop.
+  - Pre-existing gap, not caused by 0.2.1: 15 client packages with zh/en dictionaries are not in `PKGS` (chat, plugin-manager, plugin-market, schedule, shortcuts, workspace, subagent, settings-subagent, open-in-app, secret-mask, deepseek-model-label-1017, experimental agent-team / cot-translation / voice-input / session-inspector; ~1250 keys). `subagent` / `workspace` files in `src/` are stale hand-made copies (33/62 keys vs 41/119 upstream).
 - 2026-09-19: Desktop upgraded to **2.0.11** (Harness **0.1.5-rc.2**). `connection.rpc.handle` cannot mount a dedicated channel anymore. Version **0.2.5** registers `/api/dsh-i18n.translate` via `connection.fetch.register`. Desktop profile uses `github:mimateinn/dsh-i18n`. npm `latest` is still **0.2.2**.
 - 2026-09-29: Upgraded plugin to **0.2.8** for **Harness 0.2.0-rc.2** compatibility. Key changes:
   - `index.mjs`: `createUserMessage` source `{ kind: "plugin" }` → `{ kind: "user" }` (removed from `MessageSourceMap` in 0.2.0-rc.2); `purpose: "dsh-i18n-translate"` removed (restricted to `'compaction' | 'session-title'`); `reasoningEffort` defaults to `"off"` for translation calls.

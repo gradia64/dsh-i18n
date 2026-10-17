@@ -37,7 +37,14 @@
         "connection.connecting": "Reconnecting",
         "connection.connected": "Connected",
         "connection.reconnect": "Disconnected, reconnect now",
-        "connection.restart": "Reconnecting, reconnect now"
+        "connection.restart": "Reconnecting, reconnect now",
+        "hostRelease.title": "Service version changed",
+        "hostRelease.description": "The service version changed. This page paused live updates; reload to load the new version.",
+        "hostRelease.service": "Service",
+        "hostRelease.page": "Page",
+        "hostRelease.unknown": "Unknown",
+        "hostRelease.reload": "Reload to load the new version",
+        "hostRelease.later": "Not now"
       }
     }
   ]
