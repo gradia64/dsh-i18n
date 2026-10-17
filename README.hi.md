@@ -33,7 +33,7 @@ DSH Desktop के लिए सक्रिय प्रोफ़ाइल `%AP
 
 DSH Desktop के Market इंस्टॉल पथ केवल एक सटीक प्रकाशित npm संस्करण स्वीकार करते हैं, इसलिए GitHub spec को अंतर्निहित टर्मिनल `dsh plugin add` से होकर जाना चाहिए, जो specifier को बिना सत्यापन के pnpm को अग्रेषित करता है।
 
-होस्ट को पुनः आरंभ करें, फिर **Settings → General → Language** में भाषा चुनें। हटाने के लिए `dsh plugin --profile <active-profile> remove dsh-i18n` का उपयोग करें।
+होस्ट को पुनः आरंभ करें, फिर **Settings → General → Language** में भाषा चुनें। हटाने के लिए `dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n` का उपयोग करें।
 
 ## रखरखाव पाइपलाइन
 

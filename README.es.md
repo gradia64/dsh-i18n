@@ -33,7 +33,7 @@ En DSH Desktop, el perfil activo es el valor `active` de `%APPDATA%/DSH Desktop/
 
 Las rutas de instalación del Market de DSH Desktop solo aceptan una versión exacta publicada en npm, por lo que una especificación de GitHub debe pasar por el terminal integrado `dsh plugin add`, que reenvía el especificador a pnpm sin validar.
 
-Reinicia el host y elige un idioma en **Settings → General → Language**. Elimínalo con `dsh plugin --profile <active-profile> remove dsh-i18n`.
+Reinicia el host y elige un idioma en **Settings → General → Language**. Elimínalo con `dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Flujo de mantenimiento
 

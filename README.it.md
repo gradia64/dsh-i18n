@@ -29,7 +29,7 @@ Installa nel profilo che il tuo host avvia realmente, dal branch `gradia-local` 
 dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
-Questo fork non è pubblicato su npm: il pacchetto npm `@mimateinn/dsh-i18n` è la versione upstream e non contiene le modifiche di questo branch. Per aggiornare all'ultimo `gradia-local` rilancia lo stesso comando: pnpm fissa il commit risolto al momento dell'installazione.
+Questo fork si installa come `@gradia64/dsh-i18n` e non è pubblicato su npm (il pacchetto npm `@mimateinn/dsh-i18n` è la versione upstream e non contiene le modifiche di questo branch). Se hai installato `@mimateinn/dsh-i18n`, rimuovilo prima con `dsh plugin --profile <active-profile> remove @mimateinn/dsh-i18n`; la lingua scelta e la cache delle traduzioni restano. Per aggiornare all'ultimo `gradia-local` rilancia lo stesso comando: pnpm fissa il commit risolto al momento dell'installazione.
 
 Per DSH Desktop il profilo attivo è il valore `active` in
 `%APPDATA%/DSH Desktop/profile-selection/state.json` (di solito `desktop`). Lo shim per profilo
@@ -41,7 +41,7 @@ I percorsi di installazione del Market di DSH Desktop accettano solo una version
 passare dal terminale integrato `dsh plugin add`, che inoltra lo specificatore a pnpm senza validazione.
 
 Riavvia l'host, quindi scegli una lingua in **Settings → General → Language**. Rimuovi con
-`dsh plugin --profile <active-profile> remove dsh-i18n`.
+`dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Pipeline di manutenzione
 

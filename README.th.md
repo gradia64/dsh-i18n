@@ -33,7 +33,7 @@ dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 
 เส้นทางการติดตั้งผ่าน Market ของ DSH Desktop ยอมรับเฉพาะเวอร์ชัน npm ที่เผยแพร่แล้วแบบตรงตัวเท่านั้น ดังนั้นสเปกจาก GitHub ต้องผ่านเทอร์มินัลในตัว `dsh plugin add` ซึ่งส่งต่อ specifier ไปยัง pnpm โดยไม่มีการตรวจสอบ
 
-รีสตาร์ทโฮสต์ แล้วเลือกภาษาใน **Settings → General → Language** ถอดออกด้วย `dsh plugin --profile <active-profile> remove dsh-i18n`
+รีสตาร์ทโฮสต์ แล้วเลือกภาษาใน **Settings → General → Language** ถอดออกด้วย `dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`
 
 ## ไปป์ไลน์การบำรุงรักษา
 

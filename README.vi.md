@@ -33,7 +33,7 @@ Với DSH Desktop, profile đang hoạt động là giá trị `active` trong `%
 
 Các đường dẫn cài đặt qua Market của DSH Desktop chỉ chấp nhận một phiên bản npm đã xuất bản chính xác, vì vậy spec GitHub phải đi qua terminal tích hợp `dsh plugin add`, thứ sẽ chuyển tiếp specifier cho pnpm mà không kiểm tra.
 
-Khởi động lại host, sau đó chọn ngôn ngữ trong **Settings → General → Language**. Gỡ bỏ bằng `dsh plugin --profile <active-profile> remove dsh-i18n`.
+Khởi động lại host, sau đó chọn ngôn ngữ trong **Settings → General → Language**. Gỡ bỏ bằng `dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Quy trình bảo trì
 

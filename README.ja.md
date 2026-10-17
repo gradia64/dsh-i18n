@@ -33,7 +33,7 @@ DSH Desktop の場合、アクティブなプロファイルは `%APPDATA%/DSH D
 
 DSH Desktop の Market インストール経路は、公開済みの正確な npm バージョンのみを受け付けるため、GitHub の指定子は組み込みターミナルの `dsh plugin add` を経由する必要があります。これは指定子を未検証のまま pnpm に転送します。
 
-ホストを再起動し、**Settings → General → Language** で言語を選択してください。削除するには `dsh plugin --profile <active-profile> remove dsh-i18n` を実行します。
+ホストを再起動し、**Settings → General → Language** で言語を選択してください。削除するには `dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n` を実行します。
 
 ## メンテナンスパイプライン
 

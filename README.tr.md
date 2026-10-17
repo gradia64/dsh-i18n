@@ -33,7 +33,7 @@ DSH Desktop için etkin profil, `%APPDATA%/DSH Desktop/profile-selection/state.j
 
 DSH Desktop'ın Market kurulum yolları yalnızca tam olarak yayımlanmış bir npm sürümünü kabul eder; bu yüzden bir GitHub belirteci, belirteci doğrulanmadan pnpm'e ileten yerleşik terminal `dsh plugin add` üzerinden gitmelidir.
 
-Ana makineyi yeniden başlatın, ardından **Settings → General → Language** bölümünden bir dil seçin. Şununla kaldırın: `dsh plugin --profile <active-profile> remove dsh-i18n`.
+Ana makineyi yeniden başlatın, ardından **Settings → General → Language** bölümünden bir dil seçin. Şununla kaldırın: `dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Bakım hattı
 

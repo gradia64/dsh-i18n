@@ -39,7 +39,7 @@ dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 عبر الطرفية المدمجة `dsh plugin add`، التي تمرّر المواصفات إلى pnpm دون أي تحقق.
 
 أعد تشغيل المضيف، ثم اختر لغة من **Settings → General → Language**. وللإزالة استخدم
-`dsh plugin --profile <active-profile> remove dsh-i18n`.
+`dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## مسار الصيانة
 

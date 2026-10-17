@@ -39,7 +39,7 @@ Os caminhos de instalação do Market do DSH Desktop aceitam apenas uma versão 
 passar pelo terminal integrado `dsh plugin add`, que encaminha o especificador para o pnpm sem validação.
 
 Reinicie o host e escolha um idioma em **Settings → General → Language**. Remova com
-`dsh plugin --profile <active-profile> remove dsh-i18n`.
+`dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`.
 
 ## Pipeline de manutenção
 

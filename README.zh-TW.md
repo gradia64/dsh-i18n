@@ -39,7 +39,7 @@ DSH Desktop 的 Market 安裝路徑只接受已發佈的精確 npm 版本，因�
 透過內建終端機的 `dsh plugin add` 進行，它會將 specifier 原封不動地轉交給 pnpm。
 
 重新啟動主程式，然後在 **Settings → General → Language** 中選擇語言。移除時使用
-`dsh plugin --profile <active-profile> remove dsh-i18n`。
+`dsh plugin --profile <active-profile> remove @gradia64/dsh-i18n`。
 
 ## 維護流程
 
