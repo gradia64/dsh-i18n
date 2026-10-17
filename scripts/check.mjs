@@ -64,6 +64,11 @@ for (const locale of locales) {
     if (!Array.isArray(base.entries) || !Array.isArray(translated.entries)) { fail.push(`${locale.id}/${file}: invalid entries array`); continue; }
     if (translated.pkg !== base.pkg) fail.push(`${locale.id}/${file}: stale pkg metadata`);
     const baseNs = new Map(base.entries.map((entry) => [entry.ns, entry.dict]));
+    // 上游本身就有空白值（分隔符／前綴，例如 cron.part.join = " "、zh sentenceSeparator = ""），
+    // en 或 zh-src 任一邊係空白，譯文都可以係空白。
+    const zhSrcFile = path.join(root, "src", "zh-src", file);
+    const zhNs = new Map(fs.existsSync(zhSrcFile) ? load(zhSrcFile).entries.map((entry) => [entry.ns, entry.dict]) : []);
+    const blankUpstream = (ns, key) => String(baseNs.get(ns)?.[key] ?? "x").trim() === "" || String(zhNs.get(ns)?.[key] ?? "x").trim() === "";
     const translatedNs = new Map(translated.entries.map((entry) => [entry.ns, entry.dict]));
     for (const ns of translatedNs.keys()) if (!baseNs.has(ns)) fail.push(`${locale.id}/${file}: stale namespace ${ns}`);
     for (const [ns, dict] of baseNs) {
@@ -72,7 +77,7 @@ for (const locale of locales) {
       for (const key of Object.keys(target)) if (!(key in dict)) fail.push(`${locale.id}/${file} [${ns}]: stale key ${key}`);
       for (const [key, value] of Object.entries(dict)) {
         if (!(key in target)) { fail.push(`${locale.id}/${file} [${ns}.${key}]: missing key`); continue; }
-        if (typeof target[key] !== "string" || target[key].trim() === "") fail.push(`${locale.id}/${file} [${ns}.${key}]: empty value`);
+        if (typeof target[key] !== "string" || (target[key].trim() === "" && !blankUpstream(ns, key))) fail.push(`${locale.id}/${file} [${ns}.${key}]: empty value`);
         if (placeholders(target[key]).join("|") !== placeholders(value).join("|")) fail.push(`${locale.id}/${file} [${ns}.${key}]: placeholder mismatch`);
         if (target[key] === value && englishWordCount(value) >= ENGLISH_WORD_THRESHOLD) {
           const id = `${locale.id}/${file}/${ns}.${key}`;
