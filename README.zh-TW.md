@@ -23,10 +23,10 @@
 
 ## 安裝
 
-請安裝到主程式實際啟動所使用的 profile，並固定（pin）特定的 commit：
+請安裝到主程式實際啟動所使用的 profile，從 `gradia-local` 分支安裝（也可以用 `#<commit>` 固定特定的 commit）：
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 就 DSH Desktop 而言，作用中的 profile 是下列檔案中的 `active` 值：
@@ -57,7 +57,7 @@ Extraction 可接受已安裝的 DSH 根目錄、其 `@deepseek-ai` 套件目錄
 
 ## 發佈
 
-npm 套件包含執行時期項目、產生的用戶端、語系資料以及語系登錄檔。原始碼儲存庫：https://github.com/mimateinn/dsh-i18n
+npm 套件包含執行時期項目、產生的用戶端、語系資料以及語系登錄檔。原始碼儲存庫：https://github.com/gradia64/dsh-i18n
 
 ## 安全性與隱私
 

@@ -23,17 +23,13 @@
 
 ## 安裝
 
-由 npm 安裝（精確版本——DSH Desktop 嘅 Market「更新」按鈕需要呢個）：
+由 GitHub 嘅 `gradia-local` 分支安裝（亦可以用 `#<commit>` 固定 commit）：
 
 ```bash
-dsh plugin --profile <active-profile> add @mimateinn/dsh-i18n@0.2.2
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
-或者由 GitHub 安裝，固定 commit：
-
-```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
-```
+呢個 fork 冇發佈去 npm：npm 上面嘅 `@mimateinn/dsh-i18n` 係上游版本，唔包含呢個分支嘅改動。
 
 對 DSH Desktop 嚟講，作用中設定檔係 `%APPDATA%/DSH Desktop/profile-selection/state.json` 入面嘅 `active` 值（通常係 `desktop`）。每個設定檔嘅 shim `host-commands/<profile>/bin/dsh.cmd` 會將自己嘅設定檔名稱寫入命令，所以即使 Desktop 顯示緊 `desktop`，執行 `web` shim 都會安裝到 `web` 設定檔——安裝會成功，但插件永遠唔會被載入。請明確傳入 `--profile` 以確保無誤。
 
@@ -43,9 +39,9 @@ DSH Desktop 嘅 Market 安裝路徑只接受精確嘅已發佈 npm 版本，因�
 
 ## 相容性
 
-- DeepSeek Harness **0.1.0-rc.6 或更新**，包括而家已發布嘅 **0.1.1-rc.2**（`@deepseek-ai/dsh` npm `latest` / `next`，2026-08-27）。
-- Node.js **`^22.19.0 || >=24.0.0`**（官方 harness `engines.node`，見 [dsh-v0.1.1-rc.2](https://github.com/deepseek-ai/deepseek-harness/blob/dsh-v0.1.1-rc.2/package.json)）。
-- Host 套件用 `peerDependencies`，並顯式寫 `0.1.1-rc.*` 分支，避免 node-semver 靜默排除 harness 預發布版（[awesome-dsh-plugin contributing](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md)）。
+- DeepSeek Harness **0.1.1-rc.2 或更新**，最高到 **0.2.1-rc.2**（`engines.dsh`：`>=0.1.1-rc.2 <0.3.0-0`）。
+- Node.js **`^22.19.0 || >=24.0.0`**（官方 harness `engines.node`）。
+- Host 套件用 `peerDependencies`，並顯式寫 `0.1.1-rc.*`、`0.2.0-rc.*` 同 `0.2.1-rc.*` 分支，避免 node-semver 靜默排除 harness 預發布版（[awesome-dsh-plugin contributing](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md)）。
 
 ## 維護流程
 
@@ -63,7 +59,7 @@ node scripts/extract.mjs <installed-dsh-path>
 
 ## 發佈
 
-npm 套件包含執行期項目、生成嘅客戶端、地區語言資料同埋地區語言註冊表。原始碼儲存庫：https://github.com/mimateinn/dsh-i18n
+npm 套件包含執行期項目、生成嘅客戶端、地區語言資料同埋地區語言註冊表。原始碼儲存庫：https://github.com/gradia64/dsh-i18n
 
 ## 安全同私隱
 

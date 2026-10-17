@@ -23,11 +23,13 @@ Un plugin di internazionalizzazione sostenibile per la Web UI di DeepSeek Harnes
 
 ## Installazione
 
-Installa nel profilo che il tuo host avvia realmente, e fissa il commit:
+Installa nel profilo che il tuo host avvia realmente, dal branch `gradia-local` (oppure fissa un commit con `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
+
+Questo fork non è pubblicato su npm: il pacchetto npm `@mimateinn/dsh-i18n` è la versione upstream e non contiene le modifiche di questo branch. Per aggiornare all'ultimo `gradia-local` rilancia lo stesso comando: pnpm fissa il commit risolto al momento dell'installazione.
 
 Per DSH Desktop il profilo attivo è il valore `active` in
 `%APPDATA%/DSH Desktop/profile-selection/state.json` (di solito `desktop`). Lo shim per profilo
@@ -57,7 +59,7 @@ L'estrazione accetta una root DSH installata, la sua directory del pacchetto `@d
 
 ## Pubblicazione
 
-Il pacchetto npm include le voci runtime, il client generato, i dati di locale e il registro delle lingue. Repository sorgente: https://github.com/mimateinn/dsh-i18n
+Il pacchetto npm include le voci runtime, il client generato, i dati di locale e il registro delle lingue. Repository sorgente: https://github.com/gradia64/dsh-i18n
 
 ## Sicurezza e privacy
 

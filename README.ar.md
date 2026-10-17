@@ -23,10 +23,10 @@
 
 ## التثبيت
 
-ثبّتها في الـ profile الذي يقلعه مضيفك فعليًا، وثبّت الـ commit:
+ثبّتها في الـ profile الذي يقلعه مضيفك فعليًا، من الفرع `gradia-local` (أو ثبّت commit محددًا بـ `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 بالنسبة إلى DSH Desktop، فإن الـ profile النشط هو قيمة `active` في
@@ -57,7 +57,7 @@ node scripts/extract.mjs <installed-dsh-path>
 
 ## النشر
 
-تتضمن حزمة npm مُدخلات التشغيل، والعميل المُولَّد، وبيانات الـ locale، وسجلّ الـ locale. المستودع المصدر: https://github.com/mimateinn/dsh-i18n
+تتضمن حزمة npm مُدخلات التشغيل، والعميل المُولَّد، وبيانات الـ locale، وسجلّ الـ locale. المستودع المصدر: https://github.com/gradia64/dsh-i18n
 
 ## الأمان والخصوصية
 

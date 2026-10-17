@@ -23,10 +23,10 @@ Plugin internasionalisasi yang berkelanjutan untuk DeepSeek Harness Web UI. Vers
 
 ## Instalasi
 
-Instal ke profil yang benar-benar digunakan host Anda saat boot, dan kunci commit-nya:
+Instal ke profil yang benar-benar digunakan host Anda saat boot, dari branch `gradia-local` (atau kunci sebuah commit dengan `#<commit>`):
 
 ```bash
-dsh plugin --profile <active-profile> add github:mimateinn/dsh-i18n#<commit>
+dsh plugin --profile <active-profile> add github:gradia64/dsh-i18n#gradia-local
 ```
 
 Untuk DSH Desktop, profil aktif adalah nilai `active` di
@@ -57,7 +57,7 @@ Ekstraksi menerima root DSH yang terinstal, direktori paket `@deepseek-ai`-nya, 
 
 ## Publikasi
 
-Paket npm mencakup entri runtime, klien yang dihasilkan, data locale, dan registry locale. Repositori sumber: https://github.com/mimateinn/dsh-i18n
+Paket npm mencakup entri runtime, klien yang dihasilkan, data locale, dan registry locale. Repositori sumber: https://github.com/gradia64/dsh-i18n
 
 ## Keamanan dan privasi
 
