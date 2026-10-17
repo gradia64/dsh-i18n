@@ -4,18 +4,18 @@
     {
       "ns": "settings.agentLoop",
       "dict": {
-        "title": "Agent loop",
-        "description": "Control how the Agent dispatches tool calls.",
-        "maxParallel": "Parallel tool calls",
-        "maxParallelHint": "Upper bound on parallel-safe calls running at once within one step.",
-        "overridden": "Overridden",
-        "reset": "Reset to default",
-        "readOnly": "This deployment stores settings read-only.",
-        "unavailable": "This plugin is not loaded, so it cannot be configured right now.",
-        "save": "Save",
-        "saving": "Saving…",
-        "saveFailed": "The deployment did not accept these values; they were left for you to correct.",
-        "invalidNumber": "Enter a number, or leave blank to use the default."
+        "title": "Ciclo dell'agente",
+        "description": "Controlla come l'agente smista le chiamate agli strumenti.",
+        "maxParallel": "Chiamate a strumenti in parallelo",
+        "maxParallelHint": "Limite massimo di chiamate sicure in parallelo eseguite contemporaneamente in un singolo passo.",
+        "overridden": "Sovrascritto",
+        "reset": "Ripristina predefinito",
+        "readOnly": "Questa distribuzione salva le impostazioni in sola lettura.",
+        "unavailable": "Questo plugin non è caricato, quindi al momento non si può configurare.",
+        "save": "Salva",
+        "saving": "Salvataggio…",
+        "saveFailed": "La distribuzione non ha accettato questi valori; sono stati lasciati da correggere.",
+        "invalidNumber": "Inserisci un numero, oppure lascia vuoto per usare il valore predefinito."
       }
     }
   ]

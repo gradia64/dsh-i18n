@@ -4,10 +4,10 @@
     {
       "ns": "settings.sessionLog",
       "dict": {
-        "title": "Upload Session Log when using the official model API",
-        "description": "Help improve DeepSeek models and products.",
-        "saved": "Preference saved",
-        "failed": "Could not save preference"
+        "title": "Carica il log della sessione quando usi l'API ufficiale dei modelli",
+        "description": "Aiuta a migliorare i modelli e i prodotti DeepSeek.",
+        "saved": "Preferenza salvata",
+        "failed": "Impossibile salvare la preferenza"
       }
     }
   ]

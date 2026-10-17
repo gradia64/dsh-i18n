@@ -4,12 +4,12 @@
     {
       "ns": "model",
       "dict": {
-        "provider.account": "DeepSeek Account",
-        "command.label": "Model",
+        "provider.account": "Account DeepSeek",
+        "command.label": "Modello",
         "command.description": "Seleziona il modello per questa conversazione",
         "option.loadError": "Caricamento del catalogo non riuscito: {message}",
         "trigger.fallback": "Seleziona modello",
-        "trigger.loading": "Loading models…",
+        "trigger.loading": "Caricamento modelli…",
         "trigger.selectAria": "Seleziona modello",
         "trigger.aria": "Seleziona modello, attuale {model}",
         "trigger.ariaEffort": "Selezionare il modello, {model} corrente, sforzo di ragionamento {effort}",
@@ -19,12 +19,12 @@
         "effort.providerDefault": "Predefinito",
         "status.loading": "Aggiornamento dell'elenco dei modelli in corso...",
         "error.action": "Operazione del modello non riuscita: {message}",
-        "error.sessionInUse": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
+        "error.sessionInUse": "Questa sessione è già in uso, forse da un'altra istanza di DSH in esecuzione (come dsh web o l'app desktop). Chiudi le altre istanze di DSH in esecuzione e riprova.",
         "action.reload": "Ricarica",
         "warning.groupLoad": "Impossibile caricare {name}: {message}",
-        "search.placeholder": "Search models…",
-        "search.clear": "Clear search",
-        "search.empty": "No matching models.",
+        "search.placeholder": "Cerca modelli…",
+        "search.clear": "Cancella ricerca",
+        "search.empty": "Nessun modello corrispondente.",
         "empty.models": "Nessun modello disponibile.",
         "empty.efforts": "Questo modello non fornisce livelli di sforzo di ragionamento."
       }

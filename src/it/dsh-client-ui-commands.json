@@ -4,20 +4,20 @@
     {
       "ns": "command",
       "dict": {
-        "section.add": "Add",
-        "section.commands": "Commands",
-        "label.goal": "Goal",
-        "label.plan": "Plan",
+        "section.add": "Aggiungi",
+        "section.commands": "Comandi",
+        "label.goal": "Obiettivo",
+        "label.plan": "Piano",
         "label.feedback": "Feedback",
-        "label.compact": "Compact",
-        "label.permission": "Permission",
-        "label.export": "Export",
-        "description.goal": "Set or view the goal for a long-running task",
-        "description.plan": "Enter or leave plan mode",
-        "description.feedback": "Record feedback about this session",
-        "description.compact": "Compact older conversation history",
-        "description.permission": "Switch the permission preset (sandbox mode + approval policy)",
-        "description.export": "Download this Session log as a ZIP archive",
+        "label.compact": "Compatta",
+        "label.permission": "Permessi",
+        "label.export": "Esporta",
+        "description.goal": "Imposta o visualizza l'obiettivo di un'attività lunga",
+        "description.plan": "Entra o esci dalla modalità piano",
+        "description.feedback": "Registra un feedback su questa sessione",
+        "description.compact": "Compatta la cronologia più vecchia della conversazione",
+        "description.permission": "Cambia il preset dei permessi (modalità sandbox + criterio di approvazione)",
+        "description.export": "Scarica il log di questa sessione come archivio ZIP",
         "token.goal": "goal",
         "token.plan": "plan",
         "token.feedback": "feedback",
@@ -31,7 +31,7 @@
         "status.empty": "Nessuna opzione",
         "overlay.aria": "/{command} opzioni",
         "listbox.aria": "/{command} corrispondenze",
-        "notice.attachmentsUnsupported": "/{command} does not accept attachments; remove them first"
+        "notice.attachmentsUnsupported": "/{command} non accetta allegati; rimuovili prima"
       }
     }
   ]
