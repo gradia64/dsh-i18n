@@ -43,8 +43,14 @@
         "noDescription": "Nessuna descrizione.",
         "brokenBadge": "Impossibile caricare",
         "switchRefused": "Could not switch to {name}: {reason}",
+        "standardUnavailable": "Standard mode is unavailable. Restore it or choose another available mode.",
         "close": "Chiudi",
-        "creatorDraft": "Redigere una preimpostazione personalizzata con la modalità Creator"
+        "creatorDraft": "Redigere una preimpostazione personalizzata con la modalità Creator",
+        "createPlugin": "Let the agent create a plugin",
+        "createPluginDescription": "Enter Creator mode and make your own DSH plugin",
+        "createPluginChecking": "Checking whether Creator mode is available",
+        "createPluginUnavailable": "Temporarily unavailable. Reopen this menu to retry",
+        "createPluginMissing": "Creator mode is not included in this configuration"
       }
     }
   ]

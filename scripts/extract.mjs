@@ -7,6 +7,7 @@
 //   register(NS, "zh", {...})                          （permission-presets）
 //   const dictionaries = [["zh", {...}], ["en", {...}]]（directory-picker-browse）
 //   const zh = {...} 值内引用常量（PLAN_NEXT_ACTION_ZH / accessZh["k"] 等）
+//   const zh = { ...frequencyZh, ... } 展开共享常量（schedule / open-in-app 的 PRODUCT_NAMES）
 import fs from "node:fs";
 import path from "node:path";
 
@@ -60,6 +61,22 @@ const PKGS = [
   "dsh-session-log-export",
   "dsh-client-ui-plan",
   "dsh-client-ui-reference",
+  // DSH 0.2.1-rc.2
+  "dsh-client-ui-chat",
+  "dsh-client-ui-plugin-manager",
+  "dsh-client-ui-plugin-market",
+  "dsh-client-ui-schedule",
+  "dsh-client-ui-workspace",
+  "dsh-client-ui-shortcuts",
+  "dsh-client-ui-open-in-app",
+  "dsh-client-ui-subagent",
+  "dsh-client-ui-settings-subagent",
+  "dsh-client-ui-secret-mask",
+  "dsh-client-ui-deepseek-model-label-1017",
+  "dsh-experimental-client-ui-voice-input",
+  "dsh-experimental-client-ui-cot-translation",
+  "dsh-experimental-client-ui-agent-team",
+  "dsh-experimental-session-inspector",
 ];
 
 // ---------- 小工具 ----------

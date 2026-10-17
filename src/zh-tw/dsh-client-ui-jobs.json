@@ -33,6 +33,7 @@
         "terminal.signal": "信號 {signal}",
         "terminal.exitCode": "退出碼 {code}",
         "terminal.noExitCode": "未正常退出",
+        "terminal.commandLine": "命令第 {n} 行",
         "terminal.running": "運行中",
         "terminal.failed": "已失敗",
         "terminal.done": "已完成",

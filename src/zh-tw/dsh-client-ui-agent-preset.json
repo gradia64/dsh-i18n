@@ -43,8 +43,14 @@
         "noDescription": "暫無描述。",
         "brokenBadge": "載入失敗",
         "switchRefused": "無法切換到「{name}」：{reason}",
+        "standardUnavailable": "標準模式不可用，請恢復該模式或選擇其他可用模式。",
         "close": "關閉",
-        "creatorDraft": "用「創造模式」創作自訂預設"
+        "creatorDraft": "用「創造模式」創作自訂預設",
+        "createPlugin": "讓 Agent 創建插件",
+        "createPluginDescription": "進入創造模式，制作屬於你的 DSH 插件",
+        "createPluginChecking": "正在確認創造模式是否可用",
+        "createPluginUnavailable": "暫時不可用，請重新打開菜單重試",
+        "createPluginMissing": "當前配置未提供創造模式"
       }
     }
   ]

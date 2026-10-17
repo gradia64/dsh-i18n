@@ -81,6 +81,7 @@
         "completing": "正在完成登錄…",
         "expired": "登錄已過期，請重試。",
         "failed": "操作未完成，請重試。",
+        "noResponse": "操作未完成，可能是網絡異常，請檢查你的網絡狀況後重試",
         "settingsSignedOutTitle": "當前未登錄 DeepSeek Harness 帳號",
         "settingsSignedOutDescription": "登錄 DeepSeek Harness 帳號獲取专屬 API Key",
         "signInDescription": "登錄 DeepSeek 帳號以開始使用",

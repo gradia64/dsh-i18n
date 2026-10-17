@@ -81,6 +81,7 @@
         "completing": "Completing sign in…",
         "expired": "Sign in expired. Try again.",
         "failed": "Could not complete the operation. Try again.",
+        "noResponse": "Something went wrong. Please check your network connection and try again.",
         "settingsSignedOutTitle": "You are not signed in to DeepSeek Harness",
         "settingsSignedOutDescription": "Sign in to DeepSeek Harness to get your dedicated API Key",
         "signInDescription": "Use your DeepSeek account to get started.",

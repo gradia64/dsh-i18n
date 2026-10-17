@@ -81,6 +81,7 @@
         "completing": "正在完成登录…",
         "expired": "登录已过期，请重试。",
         "failed": "操作未完成，请重试。",
+        "noResponse": "操作未完成，可能是网络异常，请检查你的网络状况后重试",
         "settingsSignedOutTitle": "当前未登录 DeepSeek Harness 账号",
         "settingsSignedOutDescription": "登录 DeepSeek Harness 账号获取专属 API Key",
         "signInDescription": "登录 DeepSeek 账号以开始使用",

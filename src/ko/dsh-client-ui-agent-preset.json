@@ -43,8 +43,14 @@
         "noDescription": "설명 없음.",
         "brokenBadge": "불러오기 실패",
         "switchRefused": "Could not switch to {name}: {reason}",
+        "standardUnavailable": "Standard mode is unavailable. Restore it or choose another available mode.",
         "close": "닫기",
-        "creatorDraft": "Creator 모드로 커스텀 프리셋 초안 작성"
+        "creatorDraft": "Creator 모드로 커스텀 프리셋 초안 작성",
+        "createPlugin": "Let the agent create a plugin",
+        "createPluginDescription": "Enter Creator mode and make your own DSH plugin",
+        "createPluginChecking": "Checking whether Creator mode is available",
+        "createPluginUnavailable": "Temporarily unavailable. Reopen this menu to retry",
+        "createPluginMissing": "Creator mode is not included in this configuration"
       }
     }
   ]

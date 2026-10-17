@@ -43,8 +43,14 @@
         "noDescription": "Không có mô tả.",
         "brokenBadge": "Tải thất bại",
         "switchRefused": "Could not switch to {name}: {reason}",
+        "standardUnavailable": "Standard mode is unavailable. Restore it or choose another available mode.",
         "close": "Đóng",
-        "creatorDraft": "Soạn cấu hình sẵn riêng bằng chế độ Creator"
+        "creatorDraft": "Soạn cấu hình sẵn riêng bằng chế độ Creator",
+        "createPlugin": "Let the agent create a plugin",
+        "createPluginDescription": "Enter Creator mode and make your own DSH plugin",
+        "createPluginChecking": "Checking whether Creator mode is available",
+        "createPluginUnavailable": "Temporarily unavailable. Reopen this menu to retry",
+        "createPluginMissing": "Creator mode is not included in this configuration"
       }
     }
   ]

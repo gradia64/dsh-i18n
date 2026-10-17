@@ -14,7 +14,7 @@
         "confirm.acknowledge": "我已了解風險，並願意繼續",
         "confirm.cancel": "取消",
         "confirm.enable": "啟用 Full access",
-        "auto.label": "Auto review",
+        "auto.label": "自動審查",
         "auto.badge": "EXP",
         "auto.description": "無沙箱運行；每次原生工具調用和 PTC 內層調用前由同一模型進行實驗性審查。",
         "auto.confirm.title": "確認啟用 Auto review（實驗）？",
