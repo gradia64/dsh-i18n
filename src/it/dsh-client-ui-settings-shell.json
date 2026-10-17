@@ -5,19 +5,19 @@
       "ns": "settings.shell",
       "dict": {
         "title": "Shell",
-        "description": "Limit how long each command may run and how much it may output.",
-        "timeoutMs": "Command timeout (ms)",
-        "timeoutMsHint": "How long one command may run before it is terminated.",
-        "maxOutputBytes": "Output cap per stream (bytes)",
-        "maxOutputBytesHint": "Output beyond this spills to a temporary file rather than being lost.",
-        "overridden": "Overridden",
-        "reset": "Reset to default",
-        "readOnly": "This deployment stores settings read-only.",
-        "unavailable": "This plugin is not loaded, so it cannot be configured right now.",
-        "save": "Save",
-        "saving": "Saving…",
-        "saveFailed": "The deployment did not accept these values; they were left for you to correct.",
-        "invalidNumber": "Enter a number, or leave blank to use the default."
+        "description": "Limita per quanto tempo può durare ogni comando e quanto output può produrre.",
+        "timeoutMs": "Timeout dei comandi (ms)",
+        "timeoutMsHint": "Per quanto tempo un comando può durare prima di essere terminato.",
+        "maxOutputBytes": "Limite di output per flusso (byte)",
+        "maxOutputBytesHint": "L'output oltre questo limite viene riversato in un file temporaneo invece di andare perso.",
+        "overridden": "Sovrascritto",
+        "reset": "Ripristina predefinito",
+        "readOnly": "Questa distribuzione salva le impostazioni in sola lettura.",
+        "unavailable": "Questo plugin non è caricato, quindi al momento non si può configurare.",
+        "save": "Salva",
+        "saving": "Salvataggio…",
+        "saveFailed": "La distribuzione non ha accettato questi valori; sono stati lasciati da correggere.",
+        "invalidNumber": "Inserisci un numero, oppure lascia vuoto per usare il valore predefinito."
       }
     }
   ]

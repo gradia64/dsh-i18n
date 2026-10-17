@@ -5,10 +5,10 @@
       "ns": "goal",
       "dict": {
         "phase.active": "Obiettivo in corso",
-        "phase.active.disarmed": "Inactive Goal",
+        "phase.active.disarmed": "Obiettivo inattivo",
         "phase.paused": "Obiettivo in pausa",
         "phase.blocked": "Obiettivo bloccato",
-        "objective.aria": "Obiettivo obiettivo",
+        "objective.aria": "Descrizione dell'obiettivo",
         "commandInput.aria": "Ingresso comando",
         "action.save": "Salva obiettivo",
         "action.cancel": "Annulla modifica",

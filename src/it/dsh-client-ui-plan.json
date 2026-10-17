@@ -4,23 +4,23 @@
     {
       "ns": "plan",
       "dict": {
-        "chip.label": "Plan",
-        "preview.title": "Plan",
-        "preview.document": "Plan · Markdown",
-        "preview.action": "Open",
-        "preview.open": "Open plan in sidebar",
-        "preview.full": "View full plan",
-        "preview.openNamed": "Open plan: {title}",
-        "preview.loading": "Loading plan…",
-        "preview.failed": "Could not load plan",
-        "preview.invalidAddress": "Invalid plan address",
-        "preview.historyUnavailable": "Session history is unavailable",
-        "preview.notFound": "This plan was not found",
-        "preview.unavailable": "Plan preview is unavailable",
-        "preview.expired": "This temporary plan preview has expired. Reopen it from the pending review card.",
+        "chip.label": "Piano",
+        "preview.title": "Piano",
+        "preview.document": "Piano · Markdown",
+        "preview.action": "Apri",
+        "preview.open": "Apri il piano nella barra laterale",
+        "preview.full": "Vedi il piano completo",
+        "preview.openNamed": "Apri piano: {title}",
+        "preview.loading": "Caricamento del piano…",
+        "preview.failed": "Impossibile caricare il piano",
+        "preview.invalidAddress": "Indirizzo del piano non valido",
+        "preview.historyUnavailable": "La cronologia della sessione non è disponibile",
+        "preview.notFound": "Piano non trovato",
+        "preview.unavailable": "L'anteprima del piano non è disponibile",
+        "preview.expired": "Questa anteprima temporanea del piano è scaduta. Riaprila dalla scheda di revisione in sospeso.",
         "chip.on.aria": "Modalità piano attivata, premere per spegnere",
         "chip.on.title": "Modalità piano attivata — fare clic per disattivare (/Plan OFF)",
-        "chip.exitFailed": "Failed to exit plan mode"
+        "chip.exitFailed": "Impossibile uscire dalla modalità piano"
       }
     }
   ]

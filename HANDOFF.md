@@ -3,6 +3,7 @@
 # HANDOFF
 
 ## In progress
+- 2026-10-17: **Italian (it) complete** for the 40 extracted packages: 1162 English placeholders translated, 25 machine-translation errors fixed (Running→"Corsa", Built-in→"Incasso", Steer→"Sterzo", Took→"Preso", placeholder order in counts, …). The 80 values still identical to English are intentional (slash-command tokens, product/protocol names, URLs, units, File/Plugin/Browser/Skill…). Pending list 8588 → 8113; `it` keeps 2 (protocol name, URL). `npm test` EXIT=0. Terms used: Steer→"Indirizza", Queue→"Accoda", job→"job", workspace→"spazio di lavoro", preset→"preset", subagent→"subagente", Auto review→"Revisione automatica".
 - 2026-10-17: **Harness 0.2.1-rc.2** → `0.2.8-gradia.3` (branch `gradia-local`).
   - Loader: `dsh-app-boot` checks `engines.dsh` with `includePrerelease: true` and ignores peers when `engines.dsh` exists, so `>=0.1.1-rc.2 <0.3.0-0` already admits 0.2.1-rc.2. Peers only drive pnpm warnings; they still excluded `0.2.1-rc.*` (node-semver prerelease trap) → added `|| >=0.2.1-rc.1 <0.3.0-0` to dsh-client-locale / dsh-llm.
   - APIs unchanged in 0.2.1-rc.2: `BlockAssembler`, `createUserMessage`, `ctx.llm.stream`, `connection.fetch.register`, `connection.rpc.call`, dsh-client-locale `lib/`. Cordis `~4.0.5` fits `^4.0.1`. No 0.2.1-rc.2 adapter reads `purpose` or `source.kind`, so `index.mjs` still passing `kind: "plugin"` / `purpose: "dsh-i18n-translate"` is harmless (the 2026-09-29 note below says they were removed; they were not).

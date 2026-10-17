@@ -5,129 +5,129 @@
       "ns": "documentMarkdown",
       "dict": {
         "viewer.label": "Markdown",
-        "code.copy": "Copy",
-        "code.copied": "Copied",
-        "footnotes": "Footnotes"
+        "code.copy": "Copia",
+        "code.copied": "Copiato",
+        "footnotes": "Note a piè di pagina"
       }
     },
     {
       "ns": "documentHtml",
       "dict": {
         "title": "HTML",
-        "frame": "HTML document preview",
-        "loading": "Rendering document...",
-        "failed": "This HTML document could not be previewed."
+        "frame": "Anteprima del documento HTML",
+        "loading": "Rendering del documento…",
+        "failed": "Impossibile visualizzare l'anteprima di questo documento HTML."
       }
     },
     {
       "ns": "sidebarImage",
       "dict": {
-        "zoomControls": "Zoom controls",
-        "zoomMenu": "Choose zoom",
-        "zoomOut": "Zoom out",
-        "zoomIn": "Zoom in",
-        "zoomFitWidth": "Fit width",
+        "zoomControls": "Controlli dello zoom",
+        "zoomMenu": "Scegli lo zoom",
+        "zoomOut": "Riduci",
+        "zoomIn": "Ingrandisci",
+        "zoomFitWidth": "Adatta alla larghezza",
         "zoomValue": "{percent}%",
-        "title": "Image",
-        "preview": "Image preview: {name}",
-        "loading": "Rendering document...",
-        "failed": "This image could not be displayed.",
-        "unsupported": "Image preview requires the complete file contents."
+        "title": "Immagine",
+        "preview": "Anteprima immagine: {name}",
+        "loading": "Rendering del documento…",
+        "failed": "Impossibile visualizzare questa immagine.",
+        "unsupported": "L'anteprima dell'immagine richiede il contenuto completo del file."
       }
     },
     {
       "ns": "sidebarPdf",
       "dict": {
-        "zoomControls": "Zoom controls",
-        "zoomMenu": "Choose zoom",
-        "zoomOut": "Zoom out",
-        "zoomIn": "Zoom in",
-        "zoomFitWidth": "Fit width",
+        "zoomControls": "Controlli dello zoom",
+        "zoomMenu": "Scegli lo zoom",
+        "zoomOut": "Riduci",
+        "zoomIn": "Ingrandisci",
+        "zoomFitWidth": "Adatta alla larghezza",
         "zoomValue": "{percent}%",
         "title": "PDF",
-        "pageImage": "PDF page {page}",
-        "loading": "Rendering document...",
-        "rendering": "Rendering page…",
-        "failed": "Cannot display PDF: {message}",
-        "password": "This PDF requires a password; password-protected previews are not supported.",
-        "workerFailed": "The PDF rendering process could not continue. Please retry.",
-        "unsupported": "PDF preview requires the complete file contents.",
-        "retry": "Retry"
+        "pageImage": "Pagina PDF {page}",
+        "loading": "Rendering del documento…",
+        "rendering": "Rendering della pagina…",
+        "failed": "Impossibile visualizzare il PDF: {message}",
+        "password": "Questo PDF richiede una password; l'anteprima di file protetti da password non è supportata.",
+        "workerFailed": "Il processo di rendering del PDF non può continuare. Riprova.",
+        "unsupported": "L'anteprima del PDF richiede il contenuto completo del file.",
+        "retry": "Riprova"
       }
     },
     {
       "ns": "sidebarCodePreview",
       "dict": {
-        "title": "Code",
-        "copy": "Copy",
-        "copied": "Copied"
+        "title": "Codice",
+        "copy": "Copia",
+        "copied": "Copiato"
       }
     },
     {
       "ns": "sidebarOffice",
       "dict": {
-        "title": "Office document",
-        "loading": "Rendering document...",
-        "retry": "Retry",
-        "viewMissingFonts": "Missing fonts: {count}. Click to view.",
-        "missingFontsTitle": "Missing fonts",
-        "missingFontsDescription": "These fonts are unavailable for this preview. Text and layout may differ from the original document.",
-        "missingFontsCount": "Fonts: {count}",
-        "closeDetails": "Close font details",
-        "unavailable": "Office previews are unavailable. Enable the document preview service on the computer running DeepSeek Harness.",
-        "invalid": "This Office file cannot be previewed. It may be damaged, password protected, or have the wrong extension.",
-        "tooLarge": "The Office file or converted PDF exceeds the preview size limit. Reduce the file size or adjust the preview configuration.",
-        "failed": "Office conversion did not produce a usable PDF. Check the file and try again.",
-        "timeout": "Office conversion timed out. Try again.",
-        "busy": "Office preview is busy. Try again shortly.",
-        "changed": "The file changed while being read. Reopen the preview."
+        "title": "Documento Office",
+        "loading": "Rendering del documento…",
+        "retry": "Riprova",
+        "viewMissingFonts": "Font mancanti: {count}. Clicca per vederli.",
+        "missingFontsTitle": "Font mancanti",
+        "missingFontsDescription": "Questi font non sono disponibili per l'anteprima. Testo e impaginazione possono differire dal documento originale.",
+        "missingFontsCount": "Font: {count}",
+        "closeDetails": "Chiudi i dettagli dei font",
+        "unavailable": "Le anteprime Office non sono disponibili. Attiva il servizio di anteprima documenti sul computer che esegue DeepSeek Harness.",
+        "invalid": "Impossibile visualizzare l'anteprima di questo file Office. Potrebbe essere danneggiato, protetto da password o avere l'estensione sbagliata.",
+        "tooLarge": "Il file Office o il PDF convertito supera il limite di dimensione dell'anteprima. Riduci la dimensione del file o modifica la configurazione dell'anteprima.",
+        "failed": "La conversione Office non ha prodotto un PDF utilizzabile. Controlla il file e riprova.",
+        "timeout": "Conversione Office scaduta. Riprova.",
+        "busy": "L'anteprima Office è occupata. Riprova tra poco.",
+        "changed": "Il file è cambiato durante la lettura. Riapri l'anteprima."
       }
     },
     {
       "ns": "sidebarExcel",
       "dict": {
-        "title": "Spreadsheet",
+        "title": "Foglio di calcolo",
         "language": "en",
-        "loading": "Rendering document...",
-        "invalid": "This spreadsheet could not be opened. Check its format, contents, or password protection.",
-        "tooLarge": "This workbook exceeds the preview size limit.",
-        "timeout": "Opening this workbook timed out. Try a smaller file.",
-        "encoding": "This text encoding could not be read. Save the file as UTF-8 or UTF-16 with a BOM and retry.",
-        "formulaWarning": "This workbook contains formulas. Displayed results may be missing or inaccurate.",
-        "unsupportedNotice": "This preview does not support {features} in this workbook. Open it in a system application for the full experience.",
-        "charts": "charts",
-        "images": "images",
-        "shapes": "shapes",
-        "conditionalFormatting": "conditional formatting",
+        "loading": "Rendering del documento…",
+        "invalid": "Impossibile aprire questo foglio di calcolo. Controlla formato, contenuto o protezione con password.",
+        "tooLarge": "Questa cartella di lavoro supera il limite di dimensione dell'anteprima.",
+        "timeout": "Apertura della cartella di lavoro scaduta. Prova con un file più piccolo.",
+        "encoding": "Impossibile leggere questa codifica del testo. Salva il file in UTF-8 o UTF-16 con BOM e riprova.",
+        "formulaWarning": "Questa cartella di lavoro contiene formule. I risultati mostrati potrebbero mancare o essere imprecisi.",
+        "unsupportedNotice": "Questa anteprima non supporta {features} in questa cartella di lavoro. Aprila in un'applicazione di sistema per vederla completa.",
+        "charts": "grafici",
+        "images": "immagini",
+        "shapes": "forme",
+        "conditionalFormatting": "formattazione condizionale",
         "featureSeparator": ", ",
-        "retry": "Retry"
+        "retry": "Riprova"
       }
     },
     {
       "ns": "sidebarDocumentPreview",
       "dict": {
-        "loading": "Rendering document...",
-        "loadMore": "Load more",
-        "changed": "The file has changed, showing the previous content.",
-        "reloadNow": "Reload",
-        "reload": "Read the file again",
-        "autoRefresh": "Auto refresh",
-        "autoRefresh.enable": "Enable auto refresh",
-        "autoRefresh.disable": "Disable auto refresh",
-        "wrap.enable": "Turn on line wrap",
-        "wrap.disable": "Turn off line wrap",
-        "wrap.aria": "Line wrap",
-        "openWith": "Open with",
-        "viewer.text": "Plain text",
-        "resourceUnavailable": "The file resource service is unavailable.",
-        "rendererUnavailable": "The {name} preview is unavailable.",
-        "unsupportedFile": "Preview is not available for this file type yet.",
-        "error.notFound": "File not found. It may have been moved or deleted.",
-        "error.tooLarge": "This page exceeds the {limit} limit and cannot be read.",
-        "error.notText": "Preview is not available for this file type yet.",
-        "error.notRegularFile": "Not a regular file, nothing to display.",
-        "error.unavailable": "Read failed: {message}",
-        "retry": "Retry"
+        "loading": "Rendering del documento…",
+        "loadMore": "Carica altro",
+        "changed": "Il file è cambiato, viene mostrato il contenuto precedente.",
+        "reloadNow": "Ricarica",
+        "reload": "Rileggi il file",
+        "autoRefresh": "Aggiornamento automatico",
+        "autoRefresh.enable": "Attiva aggiornamento automatico",
+        "autoRefresh.disable": "Disattiva aggiornamento automatico",
+        "wrap.enable": "Attiva a capo automatico",
+        "wrap.disable": "Disattiva a capo automatico",
+        "wrap.aria": "A capo automatico",
+        "openWith": "Apri con",
+        "viewer.text": "Testo semplice",
+        "resourceUnavailable": "Il servizio delle risorse file non è disponibile.",
+        "rendererUnavailable": "L'anteprima {name} non è disponibile.",
+        "unsupportedFile": "L'anteprima non è ancora disponibile per questo tipo di file.",
+        "error.notFound": "File non trovato. Potrebbe essere stato spostato o eliminato.",
+        "error.tooLarge": "Questa pagina supera il limite di {limit} e non può essere letta.",
+        "error.notText": "L'anteprima non è ancora disponibile per questo tipo di file.",
+        "error.notRegularFile": "Non è un file normale, niente da mostrare.",
+        "error.unavailable": "Lettura non riuscita: {message}",
+        "retry": "Riprova"
       }
     }
   ]

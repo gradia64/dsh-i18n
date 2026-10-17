@@ -6,11 +6,11 @@
       "dict": {
         "row.title": "Skill",
         "row.running": "Abilità di caricamento",
-        "row.preparing": "Preparing to load a skill",
+        "row.preparing": "Preparazione al caricamento di una skill",
         "row.failed": "Caricamento abilità non riuscito",
         "row.stopped": "Carico di abilità arrestato",
         "row.instructions": "Istruzioni",
-        "row.inspect": "Inspect",
+        "row.inspect": "Ispeziona",
         "menu.userOnly": "solo utente"
       }
     }

@@ -17,9 +17,9 @@
         "statusCount.interrupted": "Interrotto {count}",
         "member.empty": "Nome membro vuoto",
         "member.open": "Apri {name}",
-        "status.running": "Corsa",
+        "status.running": "In esecuzione",
         "status.completed": "Completato",
-        "status.failed": "Fallito",
+        "status.failed": "Non riuscito",
         "status.cancelled": "Annullato",
         "status.interrupted": "Interrotto"
       }
