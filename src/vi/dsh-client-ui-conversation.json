@@ -73,6 +73,8 @@
         "hero.preview": "Xem trước",
         "hero.chooseWorkspace": "Chọn workspace",
         "session.hierarchy": "Cây phân cấp phiên",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "Việc cần làm",
         "todo.progress.done": "{done} đã xong",
         "todo.progress.active": "{active} đang làm",

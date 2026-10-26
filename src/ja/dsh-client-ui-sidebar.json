@@ -8,7 +8,8 @@
         "session.new.label": "新しいセッション",
         "toggle.open": "サイドバーを開く",
         "toggle.collapse": "サイドバーを折りたたむ",
-        "panels.label": "Global panels"
+        "panels.label": "Global panels",
+        "panels.more": "More"
       }
     }
   ]

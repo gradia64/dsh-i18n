@@ -73,6 +73,8 @@
         "hero.preview": "미리보기",
         "hero.chooseWorkspace": "작업 공간 선택",
         "session.hierarchy": "세션 계층 구조",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "할 일",
         "todo.progress.done": "{done}개 완료",
         "todo.progress.active": "{active}개 진행 중",

@@ -1,0 +1,15 @@
+{
+  "pkg": "dsh-client-ui-entry-customization",
+  "entries": [
+    {
+      "ns": "entryCustomization",
+      "dict": {
+        "install": "Sfoglia altri plugin",
+        "create": "Crea il tuo plugin",
+        "createPrompt.sidebar": "Crea un plugin DSH con una voce nella barra laterale sinistra.",
+        "createPrompt.conversation": "Crea un plugin DSH di vista conversazione.",
+        "createPrompt.rightbar": "Crea un plugin DSH con una voce nella barra laterale destra."
+      }
+    }
+  ]
+}

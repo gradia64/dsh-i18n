@@ -7,7 +7,7 @@
 // (stable) but silently excludes 0.1.1-rc.2. awesome-dsh-plugin contributing
 // requires an explicit `|| >=0.1.1-rc.1 <0.2.0-0` branch.
 // Same trap on the 0.2.x line: `>=0.2.0-rc.1 <0.3.0-0` excludes 0.2.1-rc.*
-// (Harness 0.2.1-rc.2), so 0.2.1 gets its own prerelease branch. The DSH
+// (Harness 0.2.1-rc.2/rc.3), so 0.2.1 gets its own prerelease branch. The DSH
 // loader itself checks `engines.dsh` with includePrerelease and ignores
 // peers when engines.dsh is set; peers still drive pnpm's peer warnings.
 //

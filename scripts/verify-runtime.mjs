@@ -133,10 +133,10 @@ for (const L of locales) {
   ok(catalog.has(localeKey(L.id)), "catalog has " + L.id);
   let keys = 0;
   for (const nsMap of dicts.values()) keys += Object.keys(nsMap.get(localeKey(L.id)) ?? {}).length;
-  if (keys !== 2901) ok(false, "locale " + L.id + " keys=" + keys, "expected 2901");
+  if (keys !== 2910) ok(false, "locale " + L.id + " keys=" + keys, "expected 2910");
   else totalReg++;
 }
-ok(totalReg === 20, "all 20 locales registered with 2901 keys", totalReg + "/20");
+ok(totalReg === 20, "all 20 locales registered with 2910 keys", totalReg + "/20");
 ok(clientSrc.includes("characterData: false"), "observers omit characterData");
 ok(!clientSrc.includes("characterData: true"), "no characterData:true observers");
 ok(clientSrc.includes("[data-conversation-scroll]"), "skip conversation scrollport");

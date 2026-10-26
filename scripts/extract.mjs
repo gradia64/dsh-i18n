@@ -21,7 +21,7 @@ const candidates = [
 const root = candidates.find((candidate) => fs.existsSync(path.join(candidate, "dsh-client-locale", "lib", "client.js")));
 if (!root) throw new Error(`No installed DSH locale packages found under: ${path.resolve(installed)}`);
 
-// DSH 0.2.0-rc.2: new packages added since the 0.1.1-rc line. Re-run against 0.2.1-rc.2 with the same list.
+// DSH 0.2.0-rc.2: new packages added since the 0.1.1-rc line. Re-run against 0.2.1-rc.2 and 0.2.1-rc.3.
 const PKGS = [
   "dsh-client-locale",
   "dsh-client-ui-cordis",
@@ -77,6 +77,8 @@ const PKGS = [
   "dsh-experimental-client-ui-cot-translation",
   "dsh-experimental-client-ui-agent-team",
   "dsh-experimental-session-inspector",
+  // DSH 0.2.1-rc.3
+  "dsh-client-ui-entry-customization",
 ];
 
 // ---------- 小工具 ----------

@@ -73,6 +73,8 @@
         "hero.preview": "पूर्वावलोकन",
         "hero.chooseWorkspace": "वर्कस्पेस चुनें",
         "session.hierarchy": "सत्र पदानुक्रम",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "कार्य-सूची",
         "todo.progress.done": "{done} पूर्ण",
         "todo.progress.active": "{active} प्रगति में",

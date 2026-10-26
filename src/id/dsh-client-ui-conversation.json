@@ -73,6 +73,8 @@
         "hero.preview": "Pratinjau",
         "hero.chooseWorkspace": "Pilih ruang kerja",
         "session.hierarchy": "Hierarki sesi",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "Daftar tugas",
         "todo.progress.done": "{done} selesai",
         "todo.progress.active": "{active} sedang berlangsung",

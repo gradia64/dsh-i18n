@@ -73,6 +73,8 @@
         "hero.preview": "Vorschau",
         "hero.chooseWorkspace": "Arbeitsbereich wählen",
         "session.hierarchy": "Sitzungshierarchie",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "Aufgaben",
         "todo.progress.done": "{done} abgeschlossen",
         "todo.progress.active": "{active} in Bearbeitung",

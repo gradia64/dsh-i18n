@@ -73,6 +73,8 @@
         "hero.preview": "ดูตัวอย่าง",
         "hero.chooseWorkspace": "เลือกพื้นที่ทำงาน",
         "session.hierarchy": "ลำดับชั้นเซสชั่น",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "สิ่งที่ต้องทำ",
         "todo.progress.done": "{done} เสร็จสมบูรณ์แล้ว",
         "todo.progress.active": "{active} อยู่ระหว่างดำเนินการ",

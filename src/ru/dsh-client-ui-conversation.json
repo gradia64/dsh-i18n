@@ -73,6 +73,8 @@
         "hero.preview": "Предварительный просмотр",
         "hero.chooseWorkspace": "Выберите рабочее пространство",
         "session.hierarchy": "Иерархия сеансов",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "Дела",
         "todo.progress.done": "{done} завершено",
         "todo.progress.active": "{active} в разработке",
