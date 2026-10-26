@@ -73,6 +73,8 @@
         "hero.preview": "معاينة",
         "hero.chooseWorkspace": "اختيار مساحة عمل",
         "session.hierarchy": "جلسة hierarchy",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "المهام",
         "todo.progress.done": "‏{done} completed",
         "todo.progress.active": "‏{active} in progress",

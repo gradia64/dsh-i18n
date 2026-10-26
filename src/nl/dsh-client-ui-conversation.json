@@ -73,6 +73,8 @@
         "hero.preview": "Voorbeeld",
         "hero.chooseWorkspace": "Kies werkruimte",
         "session.hierarchy": "Sessiehiërarchie",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "Taken",
         "todo.progress.done": "{done} voltooid",
         "todo.progress.active": "{active} bezig",

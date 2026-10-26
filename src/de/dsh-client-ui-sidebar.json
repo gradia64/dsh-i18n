@@ -8,7 +8,8 @@
         "session.new.label": "Neue Session",
         "toggle.open": "Seitenleiste öffnen",
         "toggle.collapse": "Seitenleiste einklappen",
-        "panels.label": "Global panels"
+        "panels.label": "Global panels",
+        "panels.more": "More"
       }
     }
   ]

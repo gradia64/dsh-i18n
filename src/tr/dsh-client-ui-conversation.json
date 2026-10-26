@@ -73,6 +73,8 @@
         "hero.preview": "Önizleme",
         "hero.chooseWorkspace": "Seç workspace",
         "session.hierarchy": "Oturum hierarchy",
+        "session.moreViews": "More conversation views",
+        "session.moreViewsCurrent": "More conversation views · {name}",
         "todo.title": "Yapılacaklar",
         "todo.progress.done": "{done} tamamlandı",
         "todo.progress.active": "{active} sürüyor",

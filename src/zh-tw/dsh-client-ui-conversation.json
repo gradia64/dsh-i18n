@@ -73,6 +73,8 @@
         "hero.preview": "預覽版",
         "hero.chooseWorkspace": "選擇工作區",
         "session.hierarchy": "會話層級",
+        "session.moreViews": "更多會話視圖",
+        "session.moreViewsCurrent": "更多會話視圖 · {name}",
         "todo.title": "任務",
         "todo.progress.done": "{done} 已完成",
         "todo.progress.active": "{active} 進行中",
