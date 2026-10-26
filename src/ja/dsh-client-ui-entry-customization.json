@@ -4,11 +4,11 @@
     {
       "ns": "entryCustomization",
       "dict": {
-        "install": "Browse other plugins",
-        "create": "Create your plugin",
-        "createPrompt.sidebar": "Create a DSH plugin with a left sidebar entry.",
-        "createPrompt.conversation": "Create a DSH conversation view plugin.",
-        "createPrompt.rightbar": "Create a DSH plugin with a right sidebar entry."
+        "install": "他のプラグインを見る",
+        "create": "プラグインを作成",
+        "createPrompt.sidebar": "左サイドバーにエントリーを持つ DSH プラグインを作成してください。",
+        "createPrompt.conversation": "会話ビューの DSH プラグインを作成してください。",
+        "createPrompt.rightbar": "右サイドバーにエントリーを持つ DSH プラグインを作成してください。"
       }
     }
   ]

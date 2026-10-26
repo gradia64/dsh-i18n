@@ -3,6 +3,7 @@
 # HANDOFF
 
 ## In progress
+- 2026-10-26: The 9 keys added by 0.2.1-rc.3 are translated in the remaining 17 non-Chinese locales (ar de es fr hi id ja ko nl pl pt-br ru sv th tr uk vi), reusing each locale's existing plugin / sidebar / "More" terms. Pending 16710 → 16591 (back to the pre-rc.3 count). `npm test` EXIT=0.
 - 2026-10-26: **Harness 0.2.1-rc.3** (npm `next`; `latest` is still rc.2) → `0.2.8-gradia.5`.
   - No runtime change needed: `dsh-llm`, `dsh-client-locale`, `dsh-client-connection`, `dsh-app-boot` are byte-identical to rc.2 apart from `package.json`; cordis stays 4.0.5. `engines.dsh` and both peer ranges already admit `0.2.1-rc.3` (checked with node-semver). All `DOM_SKIP_SELECTOR` attributes still appear upstream in the same packages.
   - New client package `dsh-client-ui-entry-customization` (ns `entryCustomization`, 5 keys) added to `PKGS`. Drift in existing packages: +2 conversation (`session.moreViews*`), +1 sidebar-right (`tab.guide.more`), +1 sidebar (`panels.more`); nothing removed or changed. 2901 → 2910 keys, 54 packages.
