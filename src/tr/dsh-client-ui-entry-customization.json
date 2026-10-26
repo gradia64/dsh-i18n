@@ -4,11 +4,11 @@
     {
       "ns": "entryCustomization",
       "dict": {
-        "install": "Browse other plugins",
-        "create": "Create your plugin",
-        "createPrompt.sidebar": "Create a DSH plugin with a left sidebar entry.",
-        "createPrompt.conversation": "Create a DSH conversation view plugin.",
-        "createPrompt.rightbar": "Create a DSH plugin with a right sidebar entry."
+        "install": "Diğer eklentilere göz at",
+        "create": "Kendi eklentini oluştur",
+        "createPrompt.sidebar": "Sol kenar çubuğunda girişi olan bir DSH eklentisi oluştur.",
+        "createPrompt.conversation": "Bir DSH sohbet görünümü eklentisi oluştur.",
+        "createPrompt.rightbar": "Sağ kenar çubuğunda girişi olan bir DSH eklentisi oluştur."
       }
     }
   ]

@@ -4,11 +4,11 @@
     {
       "ns": "entryCustomization",
       "dict": {
-        "install": "Browse other plugins",
-        "create": "Create your plugin",
-        "createPrompt.sidebar": "Create a DSH plugin with a left sidebar entry.",
-        "createPrompt.conversation": "Create a DSH conversation view plugin.",
-        "createPrompt.rightbar": "Create a DSH plugin with a right sidebar entry."
+        "install": "Andere plugins bekijken",
+        "create": "Maak je eigen plugin",
+        "createPrompt.sidebar": "Maak een DSH-plugin met een item in de linkerzijbalk.",
+        "createPrompt.conversation": "Maak een DSH-plugin voor een gespreksweergave.",
+        "createPrompt.rightbar": "Maak een DSH-plugin met een item in de rechterzijbalk."
       }
     }
   ]
